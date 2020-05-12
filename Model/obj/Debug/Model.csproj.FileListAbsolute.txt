@@ -1,0 +1,6 @@
+E:\Projetos Programação\Akin\Model\bin\Debug\Model.dll
+E:\Projetos Programação\Akin\Model\bin\Debug\Model.pdb
+E:\Projetos Programação\Akin\Model\obj\Debug\Model.csprojAssemblyReference.cache
+E:\Projetos Programação\Akin\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+E:\Projetos Programação\Akin\Model\obj\Debug\Model.dll
+E:\Projetos Programação\Akin\Model\obj\Debug\Model.pdb

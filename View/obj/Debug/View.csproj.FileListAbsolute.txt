@@ -1,0 +1,10 @@
+E:\Projetos Programação\Akin\View\bin\Debug\View.exe.config
+E:\Projetos Programação\Akin\View\bin\Debug\View.exe
+E:\Projetos Programação\Akin\View\bin\Debug\View.pdb
+E:\Projetos Programação\Akin\View\obj\Debug\View.csprojAssemblyReference.cache
+E:\Projetos Programação\Akin\View\obj\Debug\View.frmSplashScreen.resources
+E:\Projetos Programação\Akin\View\obj\Debug\View.Properties.Resources.resources
+E:\Projetos Programação\Akin\View\obj\Debug\View.csproj.GenerateResource.cache
+E:\Projetos Programação\Akin\View\obj\Debug\View.csproj.CoreCompileInputs.cache
+E:\Projetos Programação\Akin\View\obj\Debug\View.exe
+E:\Projetos Programação\Akin\View\obj\Debug\View.pdb

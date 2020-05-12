@@ -1,0 +1,13 @@
+E:\Projetos Programação\Akin\Controller\obj\Debug\Controller.csprojAssemblyReference.cache
+E:\Projetos Programação\Akin\Controller\obj\Debug\Controller.csproj.CoreCompileInputs.cache
+E:\Projetos Programação\Akin\Controller\bin\Debug\Controller.exe.config
+E:\Projetos Programação\Akin\Controller\bin\Debug\Controller.exe
+E:\Projetos Programação\Akin\Controller\bin\Debug\Controller.pdb
+E:\Projetos Programação\Akin\Controller\bin\Debug\Model.dll
+E:\Projetos Programação\Akin\Controller\bin\Debug\View.exe
+E:\Projetos Programação\Akin\Controller\bin\Debug\Model.pdb
+E:\Projetos Programação\Akin\Controller\bin\Debug\View.pdb
+E:\Projetos Programação\Akin\Controller\bin\Debug\View.exe.config
+E:\Projetos Programação\Akin\Controller\obj\Debug\Controller.csproj.CopyComplete
+E:\Projetos Programação\Akin\Controller\obj\Debug\Controller.exe
+E:\Projetos Programação\Akin\Controller\obj\Debug\Controller.pdb
