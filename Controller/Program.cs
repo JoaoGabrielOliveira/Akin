@@ -17,7 +17,7 @@ namespace Controller
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmSplashScreen());
+            Application.Run(new frmSplash());
         }
     }
 }
