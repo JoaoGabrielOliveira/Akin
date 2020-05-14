@@ -39,11 +39,11 @@
             this.lbl_textemail = new System.Windows.Forms.Label();
             this.txt_email = new System.Windows.Forms.TextBox();
             this.lbl_criarCadastro = new System.Windows.Forms.Label();
-            this.lbl_text1 = new System.Windows.Forms.Label();
             this.btn_logar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.lbl_text1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel_nome.SuspendLayout();
             this.panel_senha.SuspendLayout();
@@ -195,16 +195,6 @@
             this.lbl_criarCadastro.MouseLeave += new System.EventHandler(this.CriarContaLeave);
             this.lbl_criarCadastro.MouseHover += new System.EventHandler(this.CriarContaHover);
             // 
-            // lbl_text1
-            // 
-            this.lbl_text1.AutoSize = true;
-            this.lbl_text1.Font = new System.Drawing.Font("Microsoft Tai Le", 12F);
-            this.lbl_text1.Location = new System.Drawing.Point(175, 337);
-            this.lbl_text1.Name = "lbl_text1";
-            this.lbl_text1.Size = new System.Drawing.Size(154, 21);
-            this.lbl_text1.TabIndex = 12;
-            this.lbl_text1.Text = "Não tem uma conta?";
-            // 
             // btn_logar
             // 
             this.btn_logar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(67)))));
@@ -256,6 +246,16 @@
             this.label2.TabIndex = 19;
             this.label2.Text = "Akin Winkel";
             // 
+            // lbl_text1
+            // 
+            this.lbl_text1.AutoSize = true;
+            this.lbl_text1.Font = new System.Drawing.Font("Microsoft Tai Le", 12F);
+            this.lbl_text1.Location = new System.Drawing.Point(175, 337);
+            this.lbl_text1.Name = "lbl_text1";
+            this.lbl_text1.Size = new System.Drawing.Size(154, 21);
+            this.lbl_text1.TabIndex = 12;
+            this.lbl_text1.Text = "Não tem uma conta?";
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -291,7 +291,6 @@
         private System.Windows.Forms.Label lbl_textemail;
         private System.Windows.Forms.TextBox txt_email;
         private System.Windows.Forms.Label lbl_criarCadastro;
-        private System.Windows.Forms.Label lbl_text1;
         private System.Windows.Forms.Panel panel_senha;
         private System.Windows.Forms.Label lbl_textsenha;
         private System.Windows.Forms.TextBox txt_senha;
@@ -302,5 +301,6 @@
         private System.Windows.Forms.TextBox txt_nome;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbl_text1;
     }
 }
