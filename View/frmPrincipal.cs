@@ -16,7 +16,10 @@ namespace View
         public frmPrincipal()
         {
             InitializeComponent();
+            AbrirTela();
         }
+
+        public int screenIndex = 1;
 
         private void homeScreen1_Load(object sender, EventArgs e)
         {
@@ -27,6 +30,8 @@ namespace View
         {
             Normalizar();
             btn_profile.BackColor = Color.FromArgb(20, 105, 93);
+            screenIndex = 4;
+            AbrirTela();
         }
 
         private void btn_home_Click(object sender, EventArgs e)
@@ -34,6 +39,8 @@ namespace View
             Normalizar();
             btn_home.BackColor = Color.FromArgb(20, 105, 93);
             lbl_index.Top = btn_home.Location.Y + 12;
+            screenIndex = 1;
+            AbrirTela();
         }
 
 
@@ -42,7 +49,8 @@ namespace View
             Normalizar();
             btn_store.BackColor = Color.FromArgb(20, 105, 93);
             lbl_index.Top = btn_store.Location.Y + 12;
-
+            screenIndex = 2;
+            AbrirTela();
         }
 
         private void btn_cart_Click(object sender, EventArgs e)
@@ -50,6 +58,8 @@ namespace View
             Normalizar();
             btn_cart.BackColor = Color.FromArgb(20, 105, 93);
             lbl_index.Top = btn_cart.Location.Y + 12;
+            screenIndex = 3;
+            AbrirTela();
         }
 
 
@@ -63,6 +73,44 @@ namespace View
             btn_profile.BackColor = Color.FromArgb(44, 232, 207);
         }
 
+        private void AbrirTela()
+        {
+            switch (screenIndex)
+            {
+                //HomeScreen
+                case 1:
+                    homeScreen.Visible = true;
+                    storeScreen.Visible = false;
+                    cartScreen.Visible = false;
+                    profileScreen.Visible = false;
+
+                    break;
+
+                //StoreScreen
+                case 2:
+                    homeScreen.Visible = false;
+                    storeScreen.Visible = true;
+                    cartScreen.Visible = false;
+                    profileScreen.Visible = false;
+                    break;
+
+                //CartScreen
+                case 3:
+                    homeScreen.Visible = false;
+                    storeScreen.Visible = false;
+                    cartScreen.Visible = true;
+                    profileScreen.Visible = false;
+                break;
+
+                //ProfileScreen
+                case 4:
+                    homeScreen.Visible = false;
+                    storeScreen.Visible = false;
+                    cartScreen.Visible = false;
+                    profileScreen.Visible = true;
+                break;
+            }
+        }
 
     }
 }
