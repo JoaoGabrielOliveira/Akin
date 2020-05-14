@@ -16,3 +16,5 @@ E:\Projetos Programação\Akin\View\bin\Debug\Controller.pdb
 E:\Projetos Programação\Akin\View\bin\Debug\Controller.exe.config
 E:\Projetos Programação\Akin\View\bin\Debug\Model.pdb
 E:\Projetos Programação\Akin\View\obj\Debug\View.csproj.CopyComplete
+E:\Projetos Programação\Akin\View\obj\Debug\View.CartScreen.resources
+E:\Projetos Programação\Akin\View\obj\Debug\View.Screen.CartScreen.resources

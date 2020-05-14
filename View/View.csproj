@@ -66,6 +66,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Screen\CartScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Screen\CartScreen.Designer.cs">
+      <DependentUpon>CartScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screen\HomeScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Screen\HomeScreen.Designer.cs">
+      <DependentUpon>HomeScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screen\StoreScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Screen\StoreScreen.Designer.cs">
+      <DependentUpon>StoreScreen.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -85,6 +103,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Screen\CartScreen.resx">
+      <DependentUpon>CartScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -125,6 +146,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user-edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cart.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
