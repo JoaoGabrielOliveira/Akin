@@ -1,0 +1,6 @@
+#Ignorando arquivos Compilados
+
+/View/bin/
+/View/obj/*
+/Model/bin/*
+/Controller/bin/*

@@ -28,208 +28,248 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.panel_menu = new System.Windows.Forms.Panel();
+            this.panel_ext_btn = new System.Windows.Forms.Panel();
+            this.panel_profile = new System.Windows.Forms.Panel();
+            this.lbl_index = new System.Windows.Forms.Label();
+            this.panel_header = new System.Windows.Forms.Panel();
+            this.btn_close = new System.Windows.Forms.Button();
+            this.lbl_title = new System.Windows.Forms.Label();
+            this.btn_ext_site = new System.Windows.Forms.Button();
+            this.btn_ext_facebook = new System.Windows.Forms.Button();
+            this.btn_cart = new System.Windows.Forms.Button();
+            this.btn_store = new System.Windows.Forms.Button();
+            this.btn_home = new System.Windows.Forms.Button();
+            this.btn_profile = new System.Windows.Forms.Button();
+            this.profileScreen = new View.Screen.ProfileScreen();
+            this.homeScreen = new View.Screen.HomeScreen();
+            this.storeScreen = new View.Screen.StoreScreen();
+            this.cartScreen = new View.Screen.CartScreen();
+            this.panel_menu.SuspendLayout();
+            this.panel_ext_btn.SuspendLayout();
+            this.panel_profile.SuspendLayout();
+            this.panel_header.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // panel_menu
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(235)))), ((int)(((byte)(99)))));
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 487);
-            this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.panel_menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(235)))), ((int)(((byte)(99)))));
+            this.panel_menu.Controls.Add(this.panel_ext_btn);
+            this.panel_menu.Controls.Add(this.btn_cart);
+            this.panel_menu.Controls.Add(this.btn_store);
+            this.panel_menu.Controls.Add(this.btn_home);
+            this.panel_menu.Controls.Add(this.panel_profile);
+            this.panel_menu.Controls.Add(this.lbl_index);
+            this.panel_menu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel_menu.Location = new System.Drawing.Point(0, 0);
+            this.panel_menu.Name = "panel_menu";
+            this.panel_menu.Size = new System.Drawing.Size(200, 487);
+            this.panel_menu.TabIndex = 0;
             // 
-            // panel3
+            // panel_ext_btn
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(235)))), ((int)(((byte)(99)))));
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 76);
-            this.panel3.TabIndex = 1;
+            this.panel_ext_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(232)))), ((int)(((byte)(207)))));
+            this.panel_ext_btn.Controls.Add(this.btn_ext_site);
+            this.panel_ext_btn.Controls.Add(this.btn_ext_facebook);
+            this.panel_ext_btn.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel_ext_btn.Location = new System.Drawing.Point(0, 426);
+            this.panel_ext_btn.Name = "panel_ext_btn";
+            this.panel_ext_btn.Size = new System.Drawing.Size(200, 61);
+            this.panel_ext_btn.TabIndex = 2;
             // 
-            // panel2
+            // panel_profile
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(235)))), ((int)(((byte)(99)))));
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(200, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(600, 76);
-            this.panel2.TabIndex = 1;
+            this.panel_profile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(235)))), ((int)(((byte)(99)))));
+            this.panel_profile.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_profile.Controls.Add(this.btn_profile);
+            this.panel_profile.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_profile.Location = new System.Drawing.Point(0, 0);
+            this.panel_profile.Name = "panel_profile";
+            this.panel_profile.Size = new System.Drawing.Size(200, 76);
+            this.panel_profile.TabIndex = 1;
             // 
-            // label2
+            // lbl_index
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(23, 12);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(248, 50);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "Akin Winkel";
+            this.lbl_index.AutoSize = true;
+            this.lbl_index.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_index.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_index.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(105)))), ((int)(((byte)(93)))));
+            this.lbl_index.Location = new System.Drawing.Point(3, 136);
+            this.lbl_index.Name = "lbl_index";
+            this.lbl_index.Size = new System.Drawing.Size(25, 25);
+            this.lbl_index.TabIndex = 2;
+            this.lbl_index.Text = "●";
             // 
-            // button3
+            // panel_header
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(43)))), ((int)(((byte)(35)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(560, 0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(40, 26);
-            this.button3.TabIndex = 19;
-            this.button3.Text = "X";
-            this.button3.UseVisualStyleBackColor = false;
+            this.panel_header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(235)))), ((int)(((byte)(99)))));
+            this.panel_header.Controls.Add(this.btn_close);
+            this.panel_header.Controls.Add(this.lbl_title);
+            this.panel_header.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_header.Location = new System.Drawing.Point(200, 0);
+            this.panel_header.Name = "panel_header";
+            this.panel_header.Size = new System.Drawing.Size(600, 76);
+            this.panel_header.TabIndex = 1;
             // 
-            // panel4
+            // btn_close
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(232)))), ((int)(((byte)(207)))));
-            this.panel4.Controls.Add(this.button5);
-            this.panel4.Controls.Add(this.button4);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 426);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(200, 61);
-            this.panel4.TabIndex = 2;
+            this.btn_close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(43)))), ((int)(((byte)(35)))));
+            this.btn_close.FlatAppearance.BorderSize = 0;
+            this.btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_close.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_close.ForeColor = System.Drawing.Color.White;
+            this.btn_close.Location = new System.Drawing.Point(560, 0);
+            this.btn_close.Name = "btn_close";
+            this.btn_close.Size = new System.Drawing.Size(40, 26);
+            this.btn_close.TabIndex = 19;
+            this.btn_close.Text = "X";
+            this.btn_close.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // lbl_title
             // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.button5.FlatAppearance.BorderSize = 2;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Image = global::View.Properties.Resources.link_externo;
-            this.button5.Location = new System.Drawing.Point(119, 8);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(44, 44);
-            this.button5.TabIndex = 6;
-            this.button5.UseVisualStyleBackColor = false;
+            this.lbl_title.AutoSize = true;
+            this.lbl_title.Font = new System.Drawing.Font("Microsoft YaHei", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_title.ForeColor = System.Drawing.Color.White;
+            this.lbl_title.Location = new System.Drawing.Point(23, 12);
+            this.lbl_title.Name = "lbl_title";
+            this.lbl_title.Size = new System.Drawing.Size(248, 50);
+            this.lbl_title.TabIndex = 20;
+            this.lbl_title.Text = "Akin Winkel";
             // 
-            // button4
+            // btn_ext_site
             // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.button4.FlatAppearance.BorderSize = 2;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Image = global::View.Properties.Resources.facebook;
-            this.button4.Location = new System.Drawing.Point(38, 8);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(44, 44);
-            this.button4.TabIndex = 5;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btn_ext_site.BackColor = System.Drawing.Color.Transparent;
+            this.btn_ext_site.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_ext_site.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.btn_ext_site.FlatAppearance.BorderSize = 2;
+            this.btn_ext_site.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ext_site.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ext_site.Image = global::View.Properties.Resources.link_externo;
+            this.btn_ext_site.Location = new System.Drawing.Point(119, 8);
+            this.btn_ext_site.Name = "btn_ext_site";
+            this.btn_ext_site.Size = new System.Drawing.Size(44, 44);
+            this.btn_ext_site.TabIndex = 6;
+            this.btn_ext_site.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // btn_ext_facebook
             // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(232)))), ((int)(((byte)(207)))));
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Image = global::View.Properties.Resources.Cart;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(27, 302);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(173, 50);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "Carrinho";
-            this.button7.UseVisualStyleBackColor = false;
+            this.btn_ext_facebook.BackColor = System.Drawing.Color.Transparent;
+            this.btn_ext_facebook.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_ext_facebook.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.btn_ext_facebook.FlatAppearance.BorderSize = 2;
+            this.btn_ext_facebook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ext_facebook.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ext_facebook.Image = global::View.Properties.Resources.facebook;
+            this.btn_ext_facebook.Location = new System.Drawing.Point(38, 8);
+            this.btn_ext_facebook.Name = "btn_ext_facebook";
+            this.btn_ext_facebook.Size = new System.Drawing.Size(44, 44);
+            this.btn_ext_facebook.TabIndex = 5;
+            this.btn_ext_facebook.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // btn_cart
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(232)))), ((int)(((byte)(207)))));
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Image = global::View.Properties.Resources.shop;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(27, 213);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(173, 50);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Loja";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btn_cart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(232)))), ((int)(((byte)(207)))));
+            this.btn_cart.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_cart.FlatAppearance.BorderSize = 0;
+            this.btn_cart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cart.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cart.ForeColor = System.Drawing.Color.White;
+            this.btn_cart.Image = global::View.Properties.Resources.Cart;
+            this.btn_cart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_cart.Location = new System.Drawing.Point(27, 302);
+            this.btn_cart.Name = "btn_cart";
+            this.btn_cart.Size = new System.Drawing.Size(173, 50);
+            this.btn_cart.TabIndex = 6;
+            this.btn_cart.Text = "Carrinho";
+            this.btn_cart.UseVisualStyleBackColor = false;
+            this.btn_cart.Click += new System.EventHandler(this.btn_cart_Click);
             // 
-            // button1
+            // btn_store
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(232)))), ((int)(((byte)(207)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::View.Properties.Resources.shop;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(26, 124);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 50);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Home";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_store.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(232)))), ((int)(((byte)(207)))));
+            this.btn_store.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_store.FlatAppearance.BorderSize = 0;
+            this.btn_store.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_store.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_store.ForeColor = System.Drawing.Color.White;
+            this.btn_store.Image = global::View.Properties.Resources.shop;
+            this.btn_store.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_store.Location = new System.Drawing.Point(27, 213);
+            this.btn_store.Name = "btn_store";
+            this.btn_store.Size = new System.Drawing.Size(173, 50);
+            this.btn_store.TabIndex = 5;
+            this.btn_store.Text = "Loja";
+            this.btn_store.UseVisualStyleBackColor = false;
+            this.btn_store.Click += new System.EventHandler(this.btn_store_Click);
             // 
-            // button2
+            // btn_home
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(232)))), ((int)(((byte)(207)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::View.Properties.Resources.user;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(12, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(182, 57);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "RODOLFO";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btn_home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(105)))), ((int)(((byte)(93)))));
+            this.btn_home.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_home.FlatAppearance.BorderSize = 0;
+            this.btn_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_home.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_home.ForeColor = System.Drawing.Color.White;
+            this.btn_home.Image = global::View.Properties.Resources.shop;
+            this.btn_home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_home.Location = new System.Drawing.Point(26, 124);
+            this.btn_home.Name = "btn_home";
+            this.btn_home.Size = new System.Drawing.Size(173, 50);
+            this.btn_home.TabIndex = 2;
+            this.btn_home.Text = "Home";
+            this.btn_home.UseVisualStyleBackColor = false;
+            this.btn_home.Click += new System.EventHandler(this.btn_home_Click);
             // 
-            // label1
+            // btn_profile
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
-            this.label1.Location = new System.Drawing.Point(3, 136);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(25, 25);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "●";
+            this.btn_profile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(232)))), ((int)(((byte)(207)))));
+            this.btn_profile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_profile.FlatAppearance.BorderSize = 0;
+            this.btn_profile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_profile.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_profile.ForeColor = System.Drawing.Color.White;
+            this.btn_profile.Image = global::View.Properties.Resources.user;
+            this.btn_profile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_profile.Location = new System.Drawing.Point(12, 12);
+            this.btn_profile.Name = "btn_profile";
+            this.btn_profile.Size = new System.Drawing.Size(182, 57);
+            this.btn_profile.TabIndex = 3;
+            this.btn_profile.Text = "RODOLFO";
+            this.btn_profile.UseVisualStyleBackColor = false;
+            this.btn_profile.Click += new System.EventHandler(this.btn_profile_Click);
+            // 
+            // profileScreen
+            // 
+            this.profileScreen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(232)))), ((int)(((byte)(207)))));
+            this.profileScreen.Location = new System.Drawing.Point(200, 76);
+            this.profileScreen.Name = "profileScreen";
+            this.profileScreen.Size = new System.Drawing.Size(600, 411);
+            this.profileScreen.TabIndex = 2;
+            this.profileScreen.Visible = false;
+            // 
+            // homeScreen
+            // 
+            this.homeScreen.Location = new System.Drawing.Point(200, 76);
+            this.homeScreen.Name = "homeScreen";
+            this.homeScreen.Size = new System.Drawing.Size(600, 411);
+            this.homeScreen.TabIndex = 3;
+            this.homeScreen.Visible = false;
+            this.homeScreen.Load += new System.EventHandler(this.homeScreen1_Load);
+            // 
+            // storeScreen
+            // 
+            this.storeScreen.Location = new System.Drawing.Point(200, 76);
+            this.storeScreen.Name = "storeScreen";
+            this.storeScreen.Size = new System.Drawing.Size(600, 411);
+            this.storeScreen.TabIndex = 4;
+            // 
+            // cartScreen
+            // 
+            this.cartScreen.Location = new System.Drawing.Point(200, 75);
+            this.cartScreen.Name = "cartScreen";
+            this.cartScreen.Size = new System.Drawing.Size(600, 411);
+            this.cartScreen.TabIndex = 5;
+            this.cartScreen.Visible = false;
             // 
             // frmPrincipal
             // 
@@ -237,36 +277,44 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 487);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.cartScreen);
+            this.Controls.Add(this.storeScreen);
+            this.Controls.Add(this.homeScreen);
+            this.Controls.Add(this.profileScreen);
+            this.Controls.Add(this.panel_header);
+            this.Controls.Add(this.panel_menu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela Principal";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel4.ResumeLayout(false);
+            this.panel_menu.ResumeLayout(false);
+            this.panel_menu.PerformLayout();
+            this.panel_ext_btn.ResumeLayout(false);
+            this.panel_profile.ResumeLayout(false);
+            this.panel_header.ResumeLayout(false);
+            this.panel_header.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel_menu;
+        private System.Windows.Forms.Panel panel_profile;
+        private System.Windows.Forms.Panel panel_header;
+        private System.Windows.Forms.Button btn_home;
+        private System.Windows.Forms.Label lbl_title;
+        private System.Windows.Forms.Button btn_profile;
+        private System.Windows.Forms.Button btn_cart;
+        private System.Windows.Forms.Button btn_store;
+        private System.Windows.Forms.Button btn_close;
+        private System.Windows.Forms.Panel panel_ext_btn;
+        private System.Windows.Forms.Button btn_ext_site;
+        private System.Windows.Forms.Button btn_ext_facebook;
+        private System.Windows.Forms.Label lbl_index;
+        private Screen.ProfileScreen profileScreen;
+        private Screen.HomeScreen homeScreen;
+        private Screen.StoreScreen storeScreen;
+        private Screen.CartScreen cartScreen;
     }
 }
