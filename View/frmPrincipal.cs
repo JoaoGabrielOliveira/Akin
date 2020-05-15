@@ -20,6 +20,7 @@ namespace View
         }
 
         public int screenIndex = 1;
+        public int cartItens = 0;
 
         private void homeScreen1_Load(object sender, EventArgs e)
         {
@@ -59,7 +60,17 @@ namespace View
             btn_cart.BackColor = Color.FromArgb(20, 105, 93);
             lbl_index.Top = btn_cart.Location.Y + 12;
             screenIndex = 3;
+
             AbrirTela();
+
+            lbl_not_number.Visible = false;
+
+            cartItens = 0;
+        }
+
+        private void btn_close_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
 
 
@@ -112,5 +123,12 @@ namespace View
             }
         }
 
+        private void Notificador()
+        {
+            cartItens++;
+            lbl_not_number.Text = cartItens.ToString() + '+';
+            lbl_not_number.Visible = true;
+
+        }
     }
 }

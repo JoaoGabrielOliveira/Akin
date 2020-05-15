@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Controller",
+    "\\Controller\\bin",
+    "\\Model",
+    "\\Model\\bin",
+    "\\View",
+    "\\View\\Screen"
+  ],
+  "SelectedNode": "\\View\\frmPrincipal.cs",
+  "PreviewInSolutionExplorer": false
+}

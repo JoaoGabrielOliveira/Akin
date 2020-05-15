@@ -29,22 +29,23 @@
         private void InitializeComponent()
         {
             this.panel_menu = new System.Windows.Forms.Panel();
+            this.lbl_not_number = new System.Windows.Forms.Label();
             this.panel_ext_btn = new System.Windows.Forms.Panel();
-            this.panel_profile = new System.Windows.Forms.Panel();
-            this.lbl_index = new System.Windows.Forms.Label();
-            this.panel_header = new System.Windows.Forms.Panel();
-            this.btn_close = new System.Windows.Forms.Button();
-            this.lbl_title = new System.Windows.Forms.Label();
             this.btn_ext_site = new System.Windows.Forms.Button();
             this.btn_ext_facebook = new System.Windows.Forms.Button();
             this.btn_cart = new System.Windows.Forms.Button();
             this.btn_store = new System.Windows.Forms.Button();
             this.btn_home = new System.Windows.Forms.Button();
+            this.panel_profile = new System.Windows.Forms.Panel();
             this.btn_profile = new System.Windows.Forms.Button();
-            this.profileScreen = new View.Screen.ProfileScreen();
-            this.homeScreen = new View.Screen.HomeScreen();
-            this.storeScreen = new View.Screen.StoreScreen();
+            this.lbl_index = new System.Windows.Forms.Label();
+            this.panel_header = new System.Windows.Forms.Panel();
+            this.btn_close = new System.Windows.Forms.Button();
+            this.lbl_title = new System.Windows.Forms.Label();
             this.cartScreen = new View.Screen.CartScreen();
+            this.storeScreen = new View.Screen.StoreScreen();
+            this.homeScreen = new View.Screen.HomeScreen();
+            this.profileScreen = new View.Screen.ProfileScreen();
             this.panel_menu.SuspendLayout();
             this.panel_ext_btn.SuspendLayout();
             this.panel_profile.SuspendLayout();
@@ -54,6 +55,7 @@
             // panel_menu
             // 
             this.panel_menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(235)))), ((int)(((byte)(99)))));
+            this.panel_menu.Controls.Add(this.lbl_not_number);
             this.panel_menu.Controls.Add(this.panel_ext_btn);
             this.panel_menu.Controls.Add(this.btn_cart);
             this.panel_menu.Controls.Add(this.btn_store);
@@ -62,9 +64,23 @@
             this.panel_menu.Controls.Add(this.lbl_index);
             this.panel_menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_menu.Location = new System.Drawing.Point(0, 0);
+            this.panel_menu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel_menu.Name = "panel_menu";
-            this.panel_menu.Size = new System.Drawing.Size(200, 487);
+            this.panel_menu.Size = new System.Drawing.Size(300, 749);
             this.panel_menu.TabIndex = 0;
+            // 
+            // lbl_not_number
+            // 
+            this.lbl_not_number.AutoSize = true;
+            this.lbl_not_number.BackColor = System.Drawing.Color.Red;
+            this.lbl_not_number.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_not_number.ForeColor = System.Drawing.Color.White;
+            this.lbl_not_number.Location = new System.Drawing.Point(76, 514);
+            this.lbl_not_number.Name = "lbl_not_number";
+            this.lbl_not_number.Size = new System.Drawing.Size(17, 12);
+            this.lbl_not_number.TabIndex = 6;
+            this.lbl_not_number.Text = "1+";
+            this.lbl_not_number.Visible = false;
             // 
             // panel_ext_btn
             // 
@@ -72,69 +88,11 @@
             this.panel_ext_btn.Controls.Add(this.btn_ext_site);
             this.panel_ext_btn.Controls.Add(this.btn_ext_facebook);
             this.panel_ext_btn.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_ext_btn.Location = new System.Drawing.Point(0, 426);
+            this.panel_ext_btn.Location = new System.Drawing.Point(0, 655);
+            this.panel_ext_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel_ext_btn.Name = "panel_ext_btn";
-            this.panel_ext_btn.Size = new System.Drawing.Size(200, 61);
+            this.panel_ext_btn.Size = new System.Drawing.Size(300, 94);
             this.panel_ext_btn.TabIndex = 2;
-            // 
-            // panel_profile
-            // 
-            this.panel_profile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(235)))), ((int)(((byte)(99)))));
-            this.panel_profile.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_profile.Controls.Add(this.btn_profile);
-            this.panel_profile.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_profile.Location = new System.Drawing.Point(0, 0);
-            this.panel_profile.Name = "panel_profile";
-            this.panel_profile.Size = new System.Drawing.Size(200, 76);
-            this.panel_profile.TabIndex = 1;
-            // 
-            // lbl_index
-            // 
-            this.lbl_index.AutoSize = true;
-            this.lbl_index.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_index.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_index.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(105)))), ((int)(((byte)(93)))));
-            this.lbl_index.Location = new System.Drawing.Point(3, 136);
-            this.lbl_index.Name = "lbl_index";
-            this.lbl_index.Size = new System.Drawing.Size(25, 25);
-            this.lbl_index.TabIndex = 2;
-            this.lbl_index.Text = "●";
-            // 
-            // panel_header
-            // 
-            this.panel_header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(235)))), ((int)(((byte)(99)))));
-            this.panel_header.Controls.Add(this.btn_close);
-            this.panel_header.Controls.Add(this.lbl_title);
-            this.panel_header.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_header.Location = new System.Drawing.Point(200, 0);
-            this.panel_header.Name = "panel_header";
-            this.panel_header.Size = new System.Drawing.Size(600, 76);
-            this.panel_header.TabIndex = 1;
-            // 
-            // btn_close
-            // 
-            this.btn_close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(43)))), ((int)(((byte)(35)))));
-            this.btn_close.FlatAppearance.BorderSize = 0;
-            this.btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_close.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_close.ForeColor = System.Drawing.Color.White;
-            this.btn_close.Location = new System.Drawing.Point(560, 0);
-            this.btn_close.Name = "btn_close";
-            this.btn_close.Size = new System.Drawing.Size(40, 26);
-            this.btn_close.TabIndex = 19;
-            this.btn_close.Text = "X";
-            this.btn_close.UseVisualStyleBackColor = false;
-            // 
-            // lbl_title
-            // 
-            this.lbl_title.AutoSize = true;
-            this.lbl_title.Font = new System.Drawing.Font("Microsoft YaHei", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_title.ForeColor = System.Drawing.Color.White;
-            this.lbl_title.Location = new System.Drawing.Point(23, 12);
-            this.lbl_title.Name = "lbl_title";
-            this.lbl_title.Size = new System.Drawing.Size(248, 50);
-            this.lbl_title.TabIndex = 20;
-            this.lbl_title.Text = "Akin Winkel";
             // 
             // btn_ext_site
             // 
@@ -145,9 +103,10 @@
             this.btn_ext_site.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ext_site.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ext_site.Image = global::View.Properties.Resources.link_externo;
-            this.btn_ext_site.Location = new System.Drawing.Point(119, 8);
+            this.btn_ext_site.Location = new System.Drawing.Point(178, 12);
+            this.btn_ext_site.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_ext_site.Name = "btn_ext_site";
-            this.btn_ext_site.Size = new System.Drawing.Size(44, 44);
+            this.btn_ext_site.Size = new System.Drawing.Size(66, 68);
             this.btn_ext_site.TabIndex = 6;
             this.btn_ext_site.UseVisualStyleBackColor = false;
             // 
@@ -160,9 +119,10 @@
             this.btn_ext_facebook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ext_facebook.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ext_facebook.Image = global::View.Properties.Resources.facebook;
-            this.btn_ext_facebook.Location = new System.Drawing.Point(38, 8);
+            this.btn_ext_facebook.Location = new System.Drawing.Point(57, 12);
+            this.btn_ext_facebook.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_ext_facebook.Name = "btn_ext_facebook";
-            this.btn_ext_facebook.Size = new System.Drawing.Size(44, 44);
+            this.btn_ext_facebook.Size = new System.Drawing.Size(66, 68);
             this.btn_ext_facebook.TabIndex = 5;
             this.btn_ext_facebook.UseVisualStyleBackColor = false;
             // 
@@ -172,13 +132,14 @@
             this.btn_cart.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_cart.FlatAppearance.BorderSize = 0;
             this.btn_cart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cart.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cart.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cart.ForeColor = System.Drawing.Color.White;
             this.btn_cart.Image = global::View.Properties.Resources.Cart;
             this.btn_cart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_cart.Location = new System.Drawing.Point(27, 302);
+            this.btn_cart.Location = new System.Drawing.Point(40, 465);
+            this.btn_cart.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_cart.Name = "btn_cart";
-            this.btn_cart.Size = new System.Drawing.Size(173, 50);
+            this.btn_cart.Size = new System.Drawing.Size(260, 77);
             this.btn_cart.TabIndex = 6;
             this.btn_cart.Text = "Carrinho";
             this.btn_cart.UseVisualStyleBackColor = false;
@@ -190,13 +151,14 @@
             this.btn_store.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_store.FlatAppearance.BorderSize = 0;
             this.btn_store.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_store.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_store.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_store.ForeColor = System.Drawing.Color.White;
             this.btn_store.Image = global::View.Properties.Resources.shop;
             this.btn_store.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_store.Location = new System.Drawing.Point(27, 213);
+            this.btn_store.Location = new System.Drawing.Point(40, 328);
+            this.btn_store.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_store.Name = "btn_store";
-            this.btn_store.Size = new System.Drawing.Size(173, 50);
+            this.btn_store.Size = new System.Drawing.Size(260, 77);
             this.btn_store.TabIndex = 5;
             this.btn_store.Text = "Loja";
             this.btn_store.UseVisualStyleBackColor = false;
@@ -208,17 +170,30 @@
             this.btn_home.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_home.FlatAppearance.BorderSize = 0;
             this.btn_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_home.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_home.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_home.ForeColor = System.Drawing.Color.White;
             this.btn_home.Image = global::View.Properties.Resources.shop;
             this.btn_home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_home.Location = new System.Drawing.Point(26, 124);
+            this.btn_home.Location = new System.Drawing.Point(39, 191);
+            this.btn_home.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_home.Name = "btn_home";
-            this.btn_home.Size = new System.Drawing.Size(173, 50);
+            this.btn_home.Size = new System.Drawing.Size(260, 77);
             this.btn_home.TabIndex = 2;
             this.btn_home.Text = "Home";
             this.btn_home.UseVisualStyleBackColor = false;
             this.btn_home.Click += new System.EventHandler(this.btn_home_Click);
+            // 
+            // panel_profile
+            // 
+            this.panel_profile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(235)))), ((int)(((byte)(99)))));
+            this.panel_profile.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_profile.Controls.Add(this.btn_profile);
+            this.panel_profile.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_profile.Location = new System.Drawing.Point(0, 0);
+            this.panel_profile.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel_profile.Name = "panel_profile";
+            this.panel_profile.Size = new System.Drawing.Size(300, 116);
+            this.panel_profile.TabIndex = 1;
             // 
             // btn_profile
             // 
@@ -230,53 +205,111 @@
             this.btn_profile.ForeColor = System.Drawing.Color.White;
             this.btn_profile.Image = global::View.Properties.Resources.user;
             this.btn_profile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_profile.Location = new System.Drawing.Point(12, 12);
+            this.btn_profile.Location = new System.Drawing.Point(18, 18);
+            this.btn_profile.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_profile.Name = "btn_profile";
-            this.btn_profile.Size = new System.Drawing.Size(182, 57);
+            this.btn_profile.Size = new System.Drawing.Size(273, 88);
             this.btn_profile.TabIndex = 3;
             this.btn_profile.Text = "RODOLFO";
             this.btn_profile.UseVisualStyleBackColor = false;
             this.btn_profile.Click += new System.EventHandler(this.btn_profile_Click);
             // 
-            // profileScreen
+            // lbl_index
             // 
-            this.profileScreen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(232)))), ((int)(((byte)(207)))));
-            this.profileScreen.Location = new System.Drawing.Point(200, 76);
-            this.profileScreen.Name = "profileScreen";
-            this.profileScreen.Size = new System.Drawing.Size(600, 411);
-            this.profileScreen.TabIndex = 2;
-            this.profileScreen.Visible = false;
+            this.lbl_index.AutoSize = true;
+            this.lbl_index.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_index.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_index.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(105)))), ((int)(((byte)(93)))));
+            this.lbl_index.Location = new System.Drawing.Point(4, 209);
+            this.lbl_index.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_index.Name = "lbl_index";
+            this.lbl_index.Size = new System.Drawing.Size(25, 25);
+            this.lbl_index.TabIndex = 2;
+            this.lbl_index.Text = "●";
+            // 
+            // panel_header
+            // 
+            this.panel_header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(235)))), ((int)(((byte)(99)))));
+            this.panel_header.Controls.Add(this.btn_close);
+            this.panel_header.Controls.Add(this.lbl_title);
+            this.panel_header.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_header.Location = new System.Drawing.Point(300, 0);
+            this.panel_header.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel_header.Name = "panel_header";
+            this.panel_header.Size = new System.Drawing.Size(900, 117);
+            this.panel_header.TabIndex = 1;
+            // 
+            // btn_close
+            // 
+            this.btn_close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(43)))), ((int)(((byte)(35)))));
+            this.btn_close.FlatAppearance.BorderSize = 0;
+            this.btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_close.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_close.ForeColor = System.Drawing.Color.White;
+            this.btn_close.Location = new System.Drawing.Point(840, 0);
+            this.btn_close.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_close.Name = "btn_close";
+            this.btn_close.Size = new System.Drawing.Size(60, 40);
+            this.btn_close.TabIndex = 19;
+            this.btn_close.Text = "X";
+            this.btn_close.UseVisualStyleBackColor = false;
+            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
+            // 
+            // lbl_title
+            // 
+            this.lbl_title.AutoSize = true;
+            this.lbl_title.Font = new System.Drawing.Font("Microsoft YaHei", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_title.ForeColor = System.Drawing.Color.White;
+            this.lbl_title.Location = new System.Drawing.Point(34, 18);
+            this.lbl_title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_title.Name = "lbl_title";
+            this.lbl_title.Size = new System.Drawing.Size(248, 50);
+            this.lbl_title.TabIndex = 20;
+            this.lbl_title.Text = "Akin Winkel";
+            // 
+            // cartScreen
+            // 
+            this.cartScreen.Location = new System.Drawing.Point(302, 117);
+            this.cartScreen.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.cartScreen.Name = "cartScreen";
+            this.cartScreen.Size = new System.Drawing.Size(900, 632);
+            this.cartScreen.TabIndex = 5;
+            this.cartScreen.Visible = false;
+            // 
+            // storeScreen
+            // 
+            this.storeScreen.Location = new System.Drawing.Point(300, 117);
+            this.storeScreen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.storeScreen.Name = "storeScreen";
+            this.storeScreen.Size = new System.Drawing.Size(900, 632);
+            this.storeScreen.TabIndex = 4;
             // 
             // homeScreen
             // 
-            this.homeScreen.Location = new System.Drawing.Point(200, 76);
+            this.homeScreen.Location = new System.Drawing.Point(300, 117);
+            this.homeScreen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.homeScreen.Name = "homeScreen";
-            this.homeScreen.Size = new System.Drawing.Size(600, 411);
+            this.homeScreen.Size = new System.Drawing.Size(900, 632);
             this.homeScreen.TabIndex = 3;
             this.homeScreen.Visible = false;
             this.homeScreen.Load += new System.EventHandler(this.homeScreen1_Load);
             // 
-            // storeScreen
+            // profileScreen
             // 
-            this.storeScreen.Location = new System.Drawing.Point(200, 76);
-            this.storeScreen.Name = "storeScreen";
-            this.storeScreen.Size = new System.Drawing.Size(600, 411);
-            this.storeScreen.TabIndex = 4;
-            // 
-            // cartScreen
-            // 
-            this.cartScreen.Location = new System.Drawing.Point(200, 75);
-            this.cartScreen.Name = "cartScreen";
-            this.cartScreen.Size = new System.Drawing.Size(600, 411);
-            this.cartScreen.TabIndex = 5;
-            this.cartScreen.Visible = false;
+            this.profileScreen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(232)))), ((int)(((byte)(207)))));
+            this.profileScreen.Location = new System.Drawing.Point(300, 117);
+            this.profileScreen.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.profileScreen.Name = "profileScreen";
+            this.profileScreen.Size = new System.Drawing.Size(900, 632);
+            this.profileScreen.TabIndex = 2;
+            this.profileScreen.Visible = false;
             // 
             // frmPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 487);
+            this.ClientSize = new System.Drawing.Size(1200, 749);
             this.Controls.Add(this.cartScreen);
             this.Controls.Add(this.storeScreen);
             this.Controls.Add(this.homeScreen);
@@ -284,6 +317,7 @@
             this.Controls.Add(this.panel_header);
             this.Controls.Add(this.panel_menu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela Principal";
@@ -316,5 +350,6 @@
         private Screen.HomeScreen homeScreen;
         private Screen.StoreScreen storeScreen;
         private Screen.CartScreen cartScreen;
+        private System.Windows.Forms.Label lbl_not_number;
     }
 }

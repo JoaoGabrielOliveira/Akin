@@ -162,5 +162,8 @@
   <ItemGroup>
     <None Include="Resources\blank-profile.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
