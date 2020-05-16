@@ -1,0 +1,10 @@
+E:\Projetos Programação\Akin\Controller\bin\Release\Controller.exe.config
+E:\Projetos Programação\Akin\Controller\bin\Release\Controller.exe
+E:\Projetos Programação\Akin\Controller\bin\Release\Controller.pdb
+E:\Projetos Programação\Akin\Controller\bin\Release\Model.dll
+E:\Projetos Programação\Akin\Controller\bin\Release\Model.pdb
+E:\Projetos Programação\Akin\Controller\obj\Release\Controller.csprojAssemblyReference.cache
+E:\Projetos Programação\Akin\Controller\obj\Release\Controller.csproj.CoreCompileInputs.cache
+E:\Projetos Programação\Akin\Controller\obj\Release\Controller.csproj.CopyComplete
+E:\Projetos Programação\Akin\Controller\obj\Release\Controller.exe
+E:\Projetos Programação\Akin\Controller\obj\Release\Controller.pdb

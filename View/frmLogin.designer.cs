@@ -60,10 +60,9 @@
             this.panel1.Controls.Add(this.lbl_criarCadastro);
             this.panel1.Controls.Add(this.lbl_text1);
             this.panel1.Controls.Add(this.btn_logar);
-            this.panel1.Location = new System.Drawing.Point(228, 345);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Location = new System.Drawing.Point(153, 181);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(900, 615);
+            this.panel1.Size = new System.Drawing.Size(600, 400);
             this.panel1.TabIndex = 7;
             // 
             // panel_nome
@@ -71,10 +70,9 @@
             this.panel_nome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(207)))), ((int)(((byte)(203)))));
             this.panel_nome.Controls.Add(this.lbl_textnome);
             this.panel_nome.Controls.Add(this.txt_nome);
-            this.panel_nome.Location = new System.Drawing.Point(201, 92);
-            this.panel_nome.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel_nome.Location = new System.Drawing.Point(134, 60);
             this.panel_nome.Name = "panel_nome";
-            this.panel_nome.Size = new System.Drawing.Size(500, 58);
+            this.panel_nome.Size = new System.Drawing.Size(333, 38);
             this.panel_nome.TabIndex = 16;
             this.panel_nome.Visible = false;
             // 
@@ -85,8 +83,7 @@
             this.lbl_textnome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(207)))), ((int)(((byte)(203)))));
             this.lbl_textnome.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_textnome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(112)))), ((int)(((byte)(111)))));
-            this.lbl_textnome.Location = new System.Drawing.Point(14, 14);
-            this.lbl_textnome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_textnome.Location = new System.Drawing.Point(9, 9);
             this.lbl_textnome.Name = "lbl_textnome";
             this.lbl_textnome.Size = new System.Drawing.Size(56, 21);
             this.lbl_textnome.TabIndex = 8;
@@ -100,10 +97,9 @@
             this.txt_nome.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_nome.Font = new System.Drawing.Font("Microsoft Tai Le", 12F);
             this.txt_nome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(5)))));
-            this.txt_nome.Location = new System.Drawing.Point(21, 14);
-            this.txt_nome.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_nome.Location = new System.Drawing.Point(14, 9);
             this.txt_nome.Name = "txt_nome";
-            this.txt_nome.Size = new System.Drawing.Size(460, 21);
+            this.txt_nome.Size = new System.Drawing.Size(307, 21);
             this.txt_nome.TabIndex = 7;
             this.txt_nome.Leave += new System.EventHandler(this.AlteracaoNome);
             // 
@@ -112,10 +108,9 @@
             this.panel_senha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(207)))), ((int)(((byte)(203)))));
             this.panel_senha.Controls.Add(this.lbl_textsenha);
             this.panel_senha.Controls.Add(this.txt_senha);
-            this.panel_senha.Location = new System.Drawing.Point(201, 305);
-            this.panel_senha.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel_senha.Location = new System.Drawing.Point(134, 198);
             this.panel_senha.Name = "panel_senha";
-            this.panel_senha.Size = new System.Drawing.Size(500, 58);
+            this.panel_senha.Size = new System.Drawing.Size(333, 38);
             this.panel_senha.TabIndex = 15;
             this.panel_senha.Click += new System.EventHandler(this.ClickSenhaText);
             // 
@@ -126,8 +121,7 @@
             this.lbl_textsenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(207)))), ((int)(((byte)(203)))));
             this.lbl_textsenha.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_textsenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(112)))), ((int)(((byte)(111)))));
-            this.lbl_textsenha.Location = new System.Drawing.Point(14, 14);
-            this.lbl_textsenha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_textsenha.Location = new System.Drawing.Point(9, 9);
             this.lbl_textsenha.Name = "lbl_textsenha";
             this.lbl_textsenha.Size = new System.Drawing.Size(56, 21);
             this.lbl_textsenha.TabIndex = 8;
@@ -141,12 +135,11 @@
             this.txt_senha.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_senha.Font = new System.Drawing.Font("Microsoft Tai Le", 12F);
             this.txt_senha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(5)))));
-            this.txt_senha.Location = new System.Drawing.Point(21, 14);
-            this.txt_senha.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_senha.Location = new System.Drawing.Point(14, 9);
             this.txt_senha.MaxLength = 32;
             this.txt_senha.Name = "txt_senha";
             this.txt_senha.PasswordChar = '●';
-            this.txt_senha.Size = new System.Drawing.Size(460, 21);
+            this.txt_senha.Size = new System.Drawing.Size(307, 21);
             this.txt_senha.TabIndex = 7;
             this.txt_senha.Click += new System.EventHandler(this.ClickSenhaText);
             this.txt_senha.Leave += new System.EventHandler(this.AlteracaoSenha);
@@ -156,10 +149,9 @@
             this.panel_email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(207)))), ((int)(((byte)(203)))));
             this.panel_email.Controls.Add(this.lbl_textemail);
             this.panel_email.Controls.Add(this.txt_email);
-            this.panel_email.Location = new System.Drawing.Point(201, 198);
-            this.panel_email.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel_email.Location = new System.Drawing.Point(134, 129);
             this.panel_email.Name = "panel_email";
-            this.panel_email.Size = new System.Drawing.Size(500, 58);
+            this.panel_email.Size = new System.Drawing.Size(333, 38);
             this.panel_email.TabIndex = 14;
             this.panel_email.Click += new System.EventHandler(this.ClickEmailText);
             // 
@@ -170,8 +162,7 @@
             this.lbl_textemail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(207)))), ((int)(((byte)(203)))));
             this.lbl_textemail.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_textemail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(112)))), ((int)(((byte)(111)))));
-            this.lbl_textemail.Location = new System.Drawing.Point(14, 14);
-            this.lbl_textemail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_textemail.Location = new System.Drawing.Point(9, 9);
             this.lbl_textemail.Name = "lbl_textemail";
             this.lbl_textemail.Size = new System.Drawing.Size(57, 21);
             this.lbl_textemail.TabIndex = 8;
@@ -185,10 +176,9 @@
             this.txt_email.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_email.Font = new System.Drawing.Font("Microsoft Tai Le", 12F);
             this.txt_email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(5)))));
-            this.txt_email.Location = new System.Drawing.Point(21, 14);
-            this.txt_email.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_email.Location = new System.Drawing.Point(14, 9);
             this.txt_email.Name = "txt_email";
-            this.txt_email.Size = new System.Drawing.Size(460, 21);
+            this.txt_email.Size = new System.Drawing.Size(307, 21);
             this.txt_email.TabIndex = 7;
             this.txt_email.Click += new System.EventHandler(this.ClickEmailText);
             this.txt_email.Leave += new System.EventHandler(this.Alteracao);
@@ -198,8 +188,7 @@
             this.lbl_criarCadastro.AutoSize = true;
             this.lbl_criarCadastro.Font = new System.Drawing.Font("Microsoft Tai Le", 12F);
             this.lbl_criarCadastro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(194)))), ((int)(((byte)(91)))));
-            this.lbl_criarCadastro.Location = new System.Drawing.Point(489, 518);
-            this.lbl_criarCadastro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_criarCadastro.Location = new System.Drawing.Point(326, 337);
             this.lbl_criarCadastro.Name = "lbl_criarCadastro";
             this.lbl_criarCadastro.Size = new System.Drawing.Size(116, 21);
             this.lbl_criarCadastro.TabIndex = 13;
@@ -212,8 +201,7 @@
             // 
             this.lbl_text1.AutoSize = true;
             this.lbl_text1.Font = new System.Drawing.Font("Microsoft Tai Le", 12F);
-            this.lbl_text1.Location = new System.Drawing.Point(262, 518);
-            this.lbl_text1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_text1.Location = new System.Drawing.Point(175, 337);
             this.lbl_text1.Name = "lbl_text1";
             this.lbl_text1.Size = new System.Drawing.Size(154, 21);
             this.lbl_text1.TabIndex = 12;
@@ -226,10 +214,9 @@
             this.btn_logar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_logar.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_logar.ForeColor = System.Drawing.Color.White;
-            this.btn_logar.Location = new System.Drawing.Point(201, 411);
-            this.btn_logar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_logar.Location = new System.Drawing.Point(134, 267);
             this.btn_logar.Name = "btn_logar";
-            this.btn_logar.Size = new System.Drawing.Size(500, 55);
+            this.btn_logar.Size = new System.Drawing.Size(333, 36);
             this.btn_logar.TabIndex = 11;
             this.btn_logar.Text = "Logar";
             this.btn_logar.UseVisualStyleBackColor = false;
@@ -239,8 +226,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(483, 1046);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(322, 680);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(295, 16);
             this.label1.TabIndex = 16;
@@ -253,10 +239,9 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(1281, -2);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button2.Location = new System.Drawing.Point(854, -1);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(78, 40);
+            this.button2.Size = new System.Drawing.Size(52, 26);
             this.button2.TabIndex = 18;
             this.button2.Text = "X";
             this.button2.UseVisualStyleBackColor = false;
@@ -267,8 +252,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(327, 95);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(218, 62);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(534, 106);
             this.label2.TabIndex = 19;
@@ -276,16 +260,16 @@
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(194)))), ((int)(((byte)(91)))));
-            this.ClientSize = new System.Drawing.Size(1358, 959);
+            this.ClientSize = new System.Drawing.Size(906, 670);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
