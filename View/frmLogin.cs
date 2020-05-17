@@ -133,18 +133,23 @@ namespace View
                 this.Hide();
             }
 
-            else if (condicao == "101")
+            else if (condicao == "101" || condicao == "111")
             {
                 MessageBox.Show("Bem-Vindo " + txt_email.Text, "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 new frmPrincipal().Show();
                 this.Hide();
             }
 
+
+            else if (condicao == "011")
+            {
+                MessageBox.Show("Email já cadastrado, tente outro.", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            }
+
             else if (condicao == "010")
             {
                 MessageBox.Show("Email não cadastrado!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
-
             else if (condicao == "000")
             {
                 MessageBox.Show("Ocorreu um erro inesperado", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Error);
