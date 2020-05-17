@@ -4,3 +4,5 @@
 /View/obj/*
 /Model/bin/*
 /Controller/bin/*
+
+.vs/*

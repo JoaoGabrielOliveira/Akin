@@ -19,19 +19,13 @@ namespace Model
             this.Stock = 0;
         }
 
-        public Produto(string name, decimal price, int stock)
-        {
-            this.Name = name;
-            this.Price = price;
-            this.Stock = stock;
-        }
-
         public Produto(int id, string name, decimal price, int stock, DateTime created)
         {
             this.ID = id;
             this.Name = name;
             this.Price = price;
             this.Stock = stock;
+            this.Created = created;
         }
 
         public string Cadastrar()
