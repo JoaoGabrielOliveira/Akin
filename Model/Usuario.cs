@@ -10,6 +10,34 @@ namespace Model
         public string Email { get; set; }
         public string Password { get; set; }
         public char TypeUser { get; set; }
+        public DateTime Created_at;
+
+        public Usuario(string email, string password)
+        {
+            this.Email = email;
+            this.Password = password;
+        }
+
+        public Usuario(string name, string email, string password)
+        {
+            this.Name = name;
+            this.Email = email;
+            this.Password = password;
+        }
+
+        public Usuario(string name)
+        {
+            this.Name = name;
+            this.Email = "";
+            this.Password = "";
+        }
+
+        public Usuario()
+        {
+            this.Name = "Desconhecido";
+            this.Email = "";
+            this.Password = "";
+        }
 
         public string Login()
         {
@@ -98,7 +126,8 @@ namespace Model
         public string Cadastrar()
         {
 
-            string SQL = "INSERT INTO USERS(email, ecy_password, type_user, first_name) VALUES (@EMAIL,@PASS,@TYPE,@NAME)";
+            string SQL = "INSERT INTO USERS(email, ecy_password, type_user, first_name, created_at) VALUES (@EMAIL,@PASS,@TYPE,@NAME,GETDATE())";
+
             SqlCommand Comando = new SqlCommand(SQL, BancoDeDados.Conexao);
             Comando.Parameters.AddWithValue("@EMAIL",this.Email);
             Comando.Parameters.AddWithValue("@PASS", this.Password);
@@ -142,7 +171,8 @@ namespace Model
 
         public static string Cadastrar(Usuario user)
         {
-            string SQL = "INSERT INTO USERS(email, ecy_password, type_user, first_name) VALUES (@EMAIL,@PASS,@TYPE,@NAME)";
+            string SQL = "INSERT INTO USERS(email, ecy_password, type_user, first_name, created_at) VALUES (@EMAIL,@PASS,@TYPE,@NAME,GETDATE())";
+
             SqlCommand Comando = new SqlCommand(SQL, BancoDeDados.Conexao);
             Comando.Parameters.AddWithValue("@EMAIL", user.Email);
             Comando.Parameters.AddWithValue("@PASS", user.Password);
@@ -183,6 +213,7 @@ namespace Model
                 //118 - Erro caso já exista um email cadastrado com mesmo nome
             }
         }
+
 
         
     }

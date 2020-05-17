@@ -11,4 +11,15 @@ CREATE TABLE users(
 	created_at DATE
 )
 
-INSERT INTO users (first_name, email,ecy_password,type_user) VALUES ('João', 'joao@gmail.com', '12345678','c');
+delete from users;
+
+INSERT INTO users (first_name, email,ecy_password,type_user,created_at) VALUES ('João', 'joao@gmail.com', '12345678','c',GETDATE());
+select * from users;
+
+CREATE TABLE products(
+	id INT PRIMARY KEY identity NOT NULL,
+	product_name VARCHAR(60) NOT NULL,
+	price DECIMAL(7,2) NOT NULL,
+	stock int NOT NULL,
+	created_at DATE
+)
