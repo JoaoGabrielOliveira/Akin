@@ -10,7 +10,7 @@ namespace Model
         public string Email { get; set; }
         public string Password { get; set; }
         public char TypeUser { get; set; }
-        public DateTime Created_at;
+        public DateTime Created;
 
         public Usuario(string email, string password)
         {

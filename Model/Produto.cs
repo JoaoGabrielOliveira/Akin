@@ -10,6 +10,7 @@ namespace Model
         public int ID { get; set; }
         public decimal Price;
         public int Stock;
+        public DateTime Created;
 
         public Produto()
         {
@@ -25,7 +26,7 @@ namespace Model
             this.Stock = stock;
         }
 
-        public Produto(int id, string name, decimal price, int stock)
+        public Produto(int id, string name, decimal price, int stock, DateTime created)
         {
             this.ID = id;
             this.Name = name;
@@ -149,7 +150,7 @@ namespace Model
         {
             List<Produto> All = new List<Produto>();
 
-            string SQL = "SELECT products.ID,products.product_name,products.price,products.stock FROM USERS;";
+            string SQL = "SELECT products.ID,products.product_name,products.price,products.stock,products.created_at FROM USERS;";
             SqlCommand Comando = new SqlCommand(SQL, BancoDeDados.Conexao);
 
             try
@@ -158,7 +159,7 @@ namespace Model
                 SqlDataReader render = Comando.ExecuteReader();
                 while (render.Read())
                 {
-                    All.Add(new Produto(render.GetInt32(0), render.GetString(1), render.GetDecimal(2), render.GetInt32(3)));
+                    All.Add(new Produto(render.GetInt32(0), render.GetString(1), render.GetDecimal(2), render.GetInt32(3), render.GetDateTime(4)));
                 }
                 BancoDeDados.Conexao.Close();
                 return All;
