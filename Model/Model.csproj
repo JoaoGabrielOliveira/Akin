@@ -44,12 +44,12 @@
   <ItemGroup>
     <Compile Include="BancoDeDados.cs" />
     <Compile Include="Produto.cs" />
-    <Compile Include="seed.cs" />
+    <None Include="seed.cs" />
     <Compile Include="Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="schema.sql" />
+    <None Include="schema.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

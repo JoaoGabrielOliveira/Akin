@@ -3,7 +3,7 @@
 
 namespace Controller
 {
-    public class Login
+    public class LoginController
     {
         public static Model.Usuario user = new Usuario();
     }

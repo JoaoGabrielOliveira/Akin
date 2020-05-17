@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 
 namespace Model
 {
-    class Produto
+    public class Produto
     {
         public string Name;
         public int ID { get; set; }
