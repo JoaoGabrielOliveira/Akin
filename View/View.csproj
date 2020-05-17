@@ -133,6 +133,9 @@
     <EmbeddedResource Include="Screen\ProfileScreen.resx">
       <DependentUpon>ProfileScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Screen\StoreScreen.resx">
+      <DependentUpon>StoreScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

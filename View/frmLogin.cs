@@ -80,11 +80,11 @@ namespace View
 
         private void btn_logar_Click(object sender, EventArgs e)
         {
-            Login.user.Name = txt_nome.Text;
-            Login.user.Email = txt_email.Text;
-            Login.user.Password = txt_senha.Text;
+            //LoginController.user.Name = txt_nome.Text;
+            LoginController.user.Email = txt_email.Text;
+            LoginController.user.Password = txt_senha.Text;
 
-            string condicao = Login.user.Login();
+            string condicao = LoginController.user.Login();
             MessageBox.Show(condicao);
             Respostas(condicao);
 
@@ -92,11 +92,11 @@ namespace View
 
         private void btn_logar_Click_Cadastro(object sender, EventArgs e)
         {
-            Login.user.Name = txt_nome.Text;
-            Login.user.Email = txt_email.Text;
-            Login.user.Password = txt_senha.Text;
+            LoginController.user.Name = txt_nome.Text;
+            LoginController.user.Email = txt_email.Text;
+            LoginController.user.Password = txt_senha.Text;
 
-            string condicao = Login.user.Cadastrar();
+            string condicao = LoginController.user.Cadastrar();
             MessageBox.Show(condicao);
             Respostas(condicao);
         }

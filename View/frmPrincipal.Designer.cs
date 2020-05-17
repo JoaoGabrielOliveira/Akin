@@ -298,12 +298,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(801, 487);
-            this.Controls.Add(this.homeScreen);
-            this.Controls.Add(this.profileScreen);
             this.Controls.Add(this.panel_header);
             this.Controls.Add(this.panel_menu);
-            this.Controls.Add(this.cartScreen);
             this.Controls.Add(this.storeScreen);
+            this.Controls.Add(this.homeScreen);
+            this.Controls.Add(this.profileScreen);
+            this.Controls.Add(this.cartScreen);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmPrincipal";
             this.ShowIcon = false;
