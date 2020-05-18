@@ -199,9 +199,12 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <AdditionalFiles Include="Produtos\Img\132134941646.bmp">
+    <Content Include="Produtos\Img\132134941646.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </AdditionalFiles>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart-add.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

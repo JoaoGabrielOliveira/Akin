@@ -41,7 +41,7 @@
             this.lbl_title.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(235)))), ((int)(((byte)(99)))));
             this.lbl_title.Font = new System.Drawing.Font("Microsoft YaHei", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_title.ForeColor = System.Drawing.Color.White;
-            this.lbl_title.Location = new System.Drawing.Point(187, 16);
+            this.lbl_title.Location = new System.Drawing.Point(224, 16);
             this.lbl_title.Name = "lbl_title";
             this.lbl_title.Size = new System.Drawing.Size(226, 50);
             this.lbl_title.TabIndex = 21;
@@ -53,7 +53,7 @@
             this.lbl_text3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(171)))), ((int)(((byte)(235)))));
             this.lbl_text3.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_text3.ForeColor = System.Drawing.Color.White;
-            this.lbl_text3.Location = new System.Drawing.Point(50, 297);
+            this.lbl_text3.Location = new System.Drawing.Point(87, 367);
             this.lbl_text3.Name = "lbl_text3";
             this.lbl_text3.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.lbl_text3.Size = new System.Drawing.Size(501, 94);
@@ -67,7 +67,7 @@
             this.lbl_text2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(222)))), ((int)(((byte)(23)))));
             this.lbl_text2.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_text2.ForeColor = System.Drawing.Color.White;
-            this.lbl_text2.Location = new System.Drawing.Point(50, 195);
+            this.lbl_text2.Location = new System.Drawing.Point(87, 241);
             this.lbl_text2.Name = "lbl_text2";
             this.lbl_text2.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.lbl_text2.Size = new System.Drawing.Size(501, 94);
@@ -81,7 +81,7 @@
             this.lbl_text1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(23)))), ((int)(((byte)(71)))));
             this.lbl_text1.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_text1.ForeColor = System.Drawing.Color.White;
-            this.lbl_text1.Location = new System.Drawing.Point(50, 93);
+            this.lbl_text1.Location = new System.Drawing.Point(87, 115);
             this.lbl_text1.Name = "lbl_text1";
             this.lbl_text1.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.lbl_text1.Size = new System.Drawing.Size(501, 94);
@@ -101,7 +101,7 @@
             this.Controls.Add(this.lbl_title);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "HomeScreen";
-            this.Size = new System.Drawing.Size(600, 411);
+            this.Size = new System.Drawing.Size(675, 499);
             this.Load += new System.EventHandler(this.HomeScreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

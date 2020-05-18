@@ -8,7 +8,7 @@ namespace Model
     {
         public string Name;
         public int ID { get; set; }
-        public decimal Price;
+        public double Price;
         public int Stock;
         public DateTime Created;
 
@@ -19,7 +19,7 @@ namespace Model
             this.Stock = 0;
         }
 
-        public Produto(int id, string name, decimal price, int stock, DateTime created)
+        public Produto(int id, string name, float price, int stock, DateTime created)
         {
             this.ID = id;
             this.Name = name;
@@ -30,7 +30,7 @@ namespace Model
 
         public string Cadastrar()
         {
-            string SQL = "INSERT INTO USERS(name, price, strock) VALUES (@NAME,@PRICE,@STOCK)";
+            string SQL = "INSERT INTO products(name, price, strock) VALUES (@NAME,@PRICE,@STOCK)";
 
             SqlCommand Comando = new SqlCommand(SQL, BancoDeDados.Conexao);
 
@@ -65,7 +65,7 @@ namespace Model
 
         public static string Cadastrar(Produto product)
         {
-            string SQL = "INSERT INTO USERS(name, price, strock) VALUES (@NAME,@PRICE,@STOCK)";
+            string SQL = "INSERT INTO products(name, price, strock) VALUES (@NAME,@PRICE,@STOCK)";
 
             SqlCommand Comando = new SqlCommand(SQL, BancoDeDados.Conexao);
 
@@ -100,7 +100,7 @@ namespace Model
 
         public static string Cadastrar(Produto[] product)
         {
-            string SQL = "INSERT INTO USERS(name, price, strock) VALUES (@NAME,@PRICE,@STOCK)";
+            string SQL = "INSERT INTO products(name, price, strock) VALUES (@NAME,@PRICE,@STOCK)";
 
             SqlCommand Comando = new SqlCommand(SQL, BancoDeDados.Conexao);
 
@@ -144,16 +144,25 @@ namespace Model
         {
             List<Produto> All = new List<Produto>();
 
-            string SQL = "SELECT products.ID,products.product_name,products.price,products.stock,products.created_at FROM USERS;";
+            string SQL = "SELECT * FROM products;";
             SqlCommand Comando = new SqlCommand(SQL, BancoDeDados.Conexao);
 
             try
             {
                 BancoDeDados.Conexao.Open();
+                Comando.CommandType = System.Data.CommandType.Text;
                 SqlDataReader render = Comando.ExecuteReader();
                 while (render.Read())
                 {
-                    All.Add(new Produto(render.GetInt32(0), render.GetString(1), render.GetDecimal(2), render.GetInt32(3), render.GetDateTime(4)));
+                    var prod = new Produto();
+
+                    prod.ID = render.GetInt32(0);
+                    prod.Name = render.GetString(1);
+                    prod.Price = double.Parse( render.GetValue(2).ToString() );
+                    prod.Stock = render.GetInt32(3);
+                    prod.Created = render.GetDateTime(5);
+
+                    All.Add(prod);
                 }
                 BancoDeDados.Conexao.Close();
                 return All;
@@ -172,11 +181,45 @@ namespace Model
             }
         }
 
+        public static Produto[] Take(int take)
+        {
+            Produto[] Take = new Produto[take];
+
+            string SQL = "SELECT TOP("+ take + ") products.ID,products.product_name,products.price,products.stock,products.created_at FROM products;";
+            int index = 0;
+            SqlCommand Comando = new SqlCommand(SQL, BancoDeDados.Conexao);
+
+            try
+            {
+                BancoDeDados.Conexao.Open();
+                SqlDataReader render = Comando.ExecuteReader();
+                while (render.Read())
+                {
+                    Take[index] = (new Produto(render.GetInt32(0), render.GetString(1), render.GetFloat(2), render.GetInt32(3), render.GetDateTime(4)));
+                    index++;
+                }
+                BancoDeDados.Conexao.Close();
+                return Take;
+            }
+
+            catch (Exception)
+            {
+                BancoDeDados.Conexao.Close();
+                return Take;
+                //000 - Erro inesperado.
+            }
+
+            finally
+            {
+                BancoDeDados.Conexao.Close();
+            }
+        }
+
         public static Produto Find(int id)
         {
             Produto product = new Produto();
 
-            string SQL = "SELECT products.ID,products.product_name,products.price,products.stock FROM USERS WHERE products.ID = @ID";
+            string SQL = "SELECT products.ID,products.product_name,products.price,products.stock FROM products WHERE products.ID = @ID";
             SqlCommand Comando = new SqlCommand(SQL, BancoDeDados.Conexao);
             Comando.Parameters.AddWithValue("@ID", id);
 
@@ -189,7 +232,7 @@ namespace Model
                 {
                     product.ID = render.GetInt32(0);
                     product.Name = render.GetString(1);
-                    product.Price = render.GetDecimal(2);
+                    product.Price = double.Parse(render.GetValue(2).ToString());
                     product.Stock = render.GetInt32(3);
                 }
 

@@ -1,12 +1,9 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Controller;
 
 namespace View.Screen
 {
@@ -15,17 +12,20 @@ namespace View.Screen
         public StoreScreen()
         {
             InitializeComponent();
+            //MessageBox.Show(StoreController.ListProducts[0].Name);
         }
 
         private void StoreScreen_Load(object sender, EventArgs e)
-        {
-            CreateBox("Brinco", 20.29f);
-            CreateBox("Bolsa", 20.29f);
+        {           
+            foreach (var product in  StoreController.ListProducts)
+            {                
+                CreateBox(product.Name, product.Price, product.ID);
+            }
         }
 
 
         //Helper
-        private void CreateBox(string n = "Desconhecido", float p = 00.00f)
+        private void CreateBox(string n = "Desconhecido", double p = 00.00f, int id = -1)
         {
             Panel block = new Panel();
             Label title = new Label();
@@ -34,57 +34,73 @@ namespace View.Screen
             PictureBox image = new PictureBox();
 
             //Nome
-            title.AutoSize = true;
-            title.Font = new System.Drawing.Font("Oswald", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title.ForeColor = System.Drawing.Color.Black;
-            title.Location = new System.Drawing.Point(147, 4);
-            title.Size = new System.Drawing.Size(102, 41);
-            title.TabIndex = 21;
+            title.AutoSize = false;
+            title.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title.Location = new System.Drawing.Point(4, 137);
+            title.Name = "lbl_title";
+            title.Size = new System.Drawing.Size(135, 42);
+            title.TabIndex = 29;
             title.Text = n;
 
             //Price
             price.AutoSize = true;
-            price.Font = new System.Drawing.Font("Javanese Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            price.Location = new System.Drawing.Point(160, 48);
-            price.Size = new System.Drawing.Size(62, 29);
-            price.TabIndex = 22;
-            price.Text = "R$" + p;
+            price.Font = new System.Drawing.Font("Roboto Cn", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            price.Location = new System.Drawing.Point(76, 186);
+            price.Name = "lbl_price";
+            price.Size = new System.Drawing.Size(135, 42);
+            price.TabIndex = 28;
+            price.Text = p.ToString("c");
 
             //Botão
             btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(232)))), ((int)(((byte)(207)))));
             btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            btn.Dock = System.Windows.Forms.DockStyle.Bottom;
             btn.FlatAppearance.BorderSize = 0;
             btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btn.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             btn.ForeColor = System.Drawing.Color.White;
             btn.Image = global::View.Properties.Resources.Cart;
             btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btn.Location = new System.Drawing.Point(264, 99);
+            btn.Location = new System.Drawing.Point(0, 200);
             btn.Name = "btn_cart";
-            btn.Size = new System.Drawing.Size(151, 28);
-            btn.TabIndex = 22;
+            btn.Click += Btn_Click;
+            btn.Size = new System.Drawing.Size(142, 37);
+            btn.TabIndex = 7;
             btn.Text = "Adicionar";
             btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             btn.UseVisualStyleBackColor = false;
 
             //Imagem
-            image.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            image.Location = new System.Drawing.Point(9, 6);
-            image.Size = new System.Drawing.Size(121, 121);
-            image.TabIndex = 1;
-            image.TabStop = false;
+            image.Dock = System.Windows.Forms.DockStyle.Top;
+            image.Image = global::View.Properties.Resources.blank_profile;
+            image.Location = new System.Drawing.Point(0, 0);
+            image.Size = new System.Drawing.Size(142, 136);
+            block.BackColor = Color.FromArgb(45, 47, 51);
+            image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            block.Margin = new System.Windows.Forms.Padding(10);
+            image.TabIndex = 0;block.Size = new System.Drawing.Size(142, 237);
+            image.TabStop = false;block.TabIndex = 27;
 
-            block.BorderStyle = BorderStyle.FixedSingle;
-            block.Size = new Size(435, 134);
-            block.Controls.Add(title);
+            block.BackColor = System.Drawing.Color.Snow;
+            block.Location = new System.Drawing.Point(10, 10);
+            block.Margin = new System.Windows.Forms.Padding(10);
+            block.Name = "id_" + id;
+            block.Size = new System.Drawing.Size(142, 255);
+            block.TabIndex = 27;
+
             block.Controls.Add(price);
+            block.Controls.Add(title);
             block.Controls.Add(btn);
             block.Controls.Add(image);
-            
             
 
 
             this.flowProducts.Controls.Add(block);
+        }
+
+        private void Btn_Click(object sender, EventArgs e)
+        {
+            e.ToString();
         }
     }
 }

@@ -42,10 +42,10 @@
             this.panel_header = new System.Windows.Forms.Panel();
             this.btn_close = new System.Windows.Forms.Button();
             this.lbl_title = new System.Windows.Forms.Label();
+            this.storeScreen = new View.Screen.StoreScreen();
             this.homeScreen = new View.Screen.HomeScreen();
             this.profileScreen = new View.Screen.ProfileScreen();
             this.cartScreen = new View.Screen.CartScreen();
-            this.storeScreen = new View.Screen.StoreScreen();
             this.panel_menu.SuspendLayout();
             this.panel_ext_btn.SuspendLayout();
             this.panel_profile.SuspendLayout();
@@ -65,7 +65,7 @@
             this.panel_menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_menu.Location = new System.Drawing.Point(0, 0);
             this.panel_menu.Name = "panel_menu";
-            this.panel_menu.Size = new System.Drawing.Size(200, 487);
+            this.panel_menu.Size = new System.Drawing.Size(200, 575);
             this.panel_menu.TabIndex = 0;
             // 
             // lbl_not_number
@@ -88,7 +88,7 @@
             this.panel_ext_btn.Controls.Add(this.btn_ext_site);
             this.panel_ext_btn.Controls.Add(this.btn_ext_facebook);
             this.panel_ext_btn.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_ext_btn.Location = new System.Drawing.Point(0, 426);
+            this.panel_ext_btn.Location = new System.Drawing.Point(0, 514);
             this.panel_ext_btn.Name = "panel_ext_btn";
             this.panel_ext_btn.Size = new System.Drawing.Size(200, 61);
             this.panel_ext_btn.TabIndex = 2;
@@ -226,7 +226,7 @@
             this.panel_header.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_header.Location = new System.Drawing.Point(200, 0);
             this.panel_header.Name = "panel_header";
-            this.panel_header.Size = new System.Drawing.Size(601, 76);
+            this.panel_header.Size = new System.Drawing.Size(675, 76);
             this.panel_header.TabIndex = 1;
             // 
             // btn_close
@@ -236,7 +236,7 @@
             this.btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_close.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_close.ForeColor = System.Drawing.Color.White;
-            this.btn_close.Location = new System.Drawing.Point(560, 0);
+            this.btn_close.Location = new System.Drawing.Point(635, 0);
             this.btn_close.Name = "btn_close";
             this.btn_close.Size = new System.Drawing.Size(40, 26);
             this.btn_close.TabIndex = 19;
@@ -255,13 +255,21 @@
             this.lbl_title.TabIndex = 20;
             this.lbl_title.Text = "Akin Winkel";
             // 
+            // storeScreen
+            // 
+            this.storeScreen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
+            this.storeScreen.Location = new System.Drawing.Point(200, 76);
+            this.storeScreen.Name = "storeScreen";
+            this.storeScreen.Size = new System.Drawing.Size(675, 499);
+            this.storeScreen.TabIndex = 4;
+            // 
             // homeScreen
             // 
             this.homeScreen.AutoSize = true;
             this.homeScreen.Location = new System.Drawing.Point(200, 76);
             this.homeScreen.Margin = new System.Windows.Forms.Padding(2);
             this.homeScreen.Name = "homeScreen";
-            this.homeScreen.Size = new System.Drawing.Size(600, 411);
+            this.homeScreen.Size = new System.Drawing.Size(600, 461);
             this.homeScreen.TabIndex = 3;
             this.homeScreen.Visible = false;
             this.homeScreen.Load += new System.EventHandler(this.homeScreen1_Load);
@@ -278,6 +286,7 @@
             // 
             // cartScreen
             // 
+            this.cartScreen.BackColor = System.Drawing.SystemColors.Control;
             this.cartScreen.Location = new System.Drawing.Point(201, 76);
             this.cartScreen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cartScreen.Name = "cartScreen";
@@ -285,19 +294,12 @@
             this.cartScreen.TabIndex = 5;
             this.cartScreen.Visible = false;
             // 
-            // storeScreen
-            // 
-            this.storeScreen.Location = new System.Drawing.Point(200, 76);
-            this.storeScreen.Name = "storeScreen";
-            this.storeScreen.Size = new System.Drawing.Size(600, 411);
-            this.storeScreen.TabIndex = 4;
-            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(801, 487);
+            this.ClientSize = new System.Drawing.Size(875, 575);
             this.Controls.Add(this.panel_header);
             this.Controls.Add(this.panel_menu);
             this.Controls.Add(this.storeScreen);

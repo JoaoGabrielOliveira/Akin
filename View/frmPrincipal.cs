@@ -38,6 +38,7 @@ namespace View
         private void btn_home_Click(object sender, EventArgs e)
         {
             Normalizar();
+            lbl_title.Text = "Akin Winkel";
             btn_home.BackColor = Color.FromArgb(20, 105, 93);
             lbl_index.Top = btn_home.Location.Y + 12;
             screenIndex = 1;
@@ -48,6 +49,7 @@ namespace View
         private void btn_store_Click(object sender, EventArgs e)
         {
             Normalizar();
+            lbl_title.Text = "Loja";
             btn_store.BackColor = Color.FromArgb(20, 105, 93);
             lbl_index.Top = btn_store.Location.Y + 12;
             screenIndex = 2;
@@ -57,6 +59,7 @@ namespace View
         private void btn_cart_Click(object sender, EventArgs e)
         {
             Normalizar();
+            lbl_title.Text = "Carrinho";
             btn_cart.BackColor = Color.FromArgb(20, 105, 93);
             lbl_index.Top = btn_cart.Location.Y + 12;
             screenIndex = 3;
