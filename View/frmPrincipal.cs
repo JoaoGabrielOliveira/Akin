@@ -19,8 +19,8 @@ namespace View
             AbrirTela();
         }
 
-        public int screenIndex = 1;
-        public int cartItens = 0;
+        public static int screenIndex = 1;
+        public static int cartItens = 0;
 
         private void homeScreen1_Load(object sender, EventArgs e)
         {
@@ -126,7 +126,7 @@ namespace View
             }
         }
 
-        private void Notificador()
+        public void Notificador()
         {
             cartItens++;
             lbl_not_number.Text = cartItens.ToString() + '+';

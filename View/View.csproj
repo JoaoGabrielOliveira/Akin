@@ -178,31 +178,31 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\facebook.png" />
+    <Resource Include="Resources\facebook.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\link-externo.png" />
+    <Resource Include="Resources\link-externo.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\shop.png" />
+    <Resource Include="Resources\shop.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\user.png" />
+    <Resource Include="Resources\user.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\user-delete.png" />
+    <Resource Include="Resources\user-delete.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\user-edit.png" />
+    <Resource Include="Resources\user-edit.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Cart.png" />
+    <Resource Include="Resources\Cart.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\blank-profile.png" />
+    <Resource Include="Resources\blank-profile.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\circle.png" />
+    <Resource Include="Resources\circle.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -220,10 +220,10 @@
     <Content Include="Produtos\Img\132134941646.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="Resources\cart-remove.png" />
+    <Resource Include="Resources\cart-remove.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\cart-add.png" />
+    <Resource Include="Resources\cart-add.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

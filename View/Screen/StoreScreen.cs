@@ -5,6 +5,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using Controller;
 using View.Screen.another;
+using System.IO;
 
 namespace View.Screen
 {
@@ -33,11 +34,13 @@ namespace View.Screen
             Label price = new Label();
             Button btn = new Button();
             PictureBox image = new PictureBox();
+            //string pathImage = System.Windows.Forms.Application.StartupPath + @"Produtos\Img\" + id + ".png";
+            string pathImage = @"E:\Projetos Programação\Akin\View\bin\Debug\Produtos\Img\2.png";
 
             //Nome
             title.AutoSize = false;
             title.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title.Location = new System.Drawing.Point(4, 137);
+            title.Location = new System.Drawing.Point(4, 142);
             title.Name = "lbl_title";
             title.Size = new System.Drawing.Size(135, 42);
             title.TabIndex = 29;
@@ -73,7 +76,8 @@ namespace View.Screen
 
             //Imagem
             image.Dock = System.Windows.Forms.DockStyle.Top;
-            image.Image = global::View.Properties.Resources.blank_profile;
+            if (System.IO.File.Exists(pathImage)) { image.Image = Image.FromFile(pathImage); }
+            else { image.Image =  global::View.Properties.Resources.blank_product; }
             image.Location = new System.Drawing.Point(0, 0);
             image.Size = new System.Drawing.Size(142, 136);
             block.BackColor = Color.FromArgb(45, 47, 51);
