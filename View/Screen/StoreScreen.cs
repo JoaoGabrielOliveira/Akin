@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 using Controller;
+using View.Screen.another;
 
 namespace View.Screen
 {
@@ -66,7 +67,7 @@ namespace View.Screen
             btn.Click += Btn_Click;
             btn.Size = new System.Drawing.Size(142, 37);
             btn.TabIndex = 7;
-            btn.Text = "Adicionar";
+            btn.Text = "Comprar";
             btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             btn.UseVisualStyleBackColor = false;
 
@@ -100,7 +101,8 @@ namespace View.Screen
 
         private void Btn_Click(object sender, EventArgs e)
         {
-            e.ToString();
+            AddCart cart = new AddCart();
+            cart.Show();
         }
     }
 }

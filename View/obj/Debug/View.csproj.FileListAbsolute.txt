@@ -21,3 +21,5 @@ E:\Projetos Programação\Akin\View\obj\Debug\View.csproj.CoreCompileInputs.cach
 E:\Projetos Programação\Akin\View\obj\Debug\View.csproj.CopyComplete
 E:\Projetos Programação\Akin\View\obj\Debug\View.exe
 E:\Projetos Programação\Akin\View\obj\Debug\View.pdb
+E:\Projetos Programação\Akin\View\obj\Debug\View.Screen.another.AddCart.resources
+E:\Projetos Programação\Akin\View\obj\Debug\View.Screen.another.PopUp.resources

@@ -19,7 +19,7 @@ namespace Model
             this.Stock = 0;
         }
 
-        public Produto(int id, string name, float price, int stock, DateTime created)
+        public Produto(int id, string name, double price, int stock, DateTime created)
         {
             this.ID = id;
             this.Name = name;
@@ -195,7 +195,7 @@ namespace Model
                 SqlDataReader render = Comando.ExecuteReader();
                 while (render.Read())
                 {
-                    Take[index] = (new Produto(render.GetInt32(0), render.GetString(1), render.GetFloat(2), render.GetInt32(3), render.GetDateTime(4)));
+                    Take[index] = (new Produto(render.GetInt32(0), render.GetString(1), double.Parse(render.GetValue(2).ToString()), render.GetInt32(3), render.GetDateTime(4)));
                     index++;
                 }
                 BancoDeDados.Conexao.Close();
