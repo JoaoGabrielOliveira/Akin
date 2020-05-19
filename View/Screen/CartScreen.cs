@@ -82,7 +82,12 @@ namespace View.Screen
 
 
 
-            this.flowProducts.Controls.Add(block);
+            this.flowCartProducts.Controls.Add(block);
+        }
+
+        private void btn_remove_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

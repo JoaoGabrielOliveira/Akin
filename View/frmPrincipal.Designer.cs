@@ -42,10 +42,10 @@
             this.panel_header = new System.Windows.Forms.Panel();
             this.btn_close = new System.Windows.Forms.Button();
             this.lbl_title = new System.Windows.Forms.Label();
+            this.cartScreen = new View.Screen.CartScreen();
             this.storeScreen = new View.Screen.StoreScreen();
             this.homeScreen = new View.Screen.HomeScreen();
             this.profileScreen = new View.Screen.ProfileScreen();
-            this.cartScreen = new View.Screen.CartScreen();
             this.panel_menu.SuspendLayout();
             this.panel_ext_btn.SuspendLayout();
             this.panel_profile.SuspendLayout();
@@ -255,6 +255,16 @@
             this.lbl_title.TabIndex = 20;
             this.lbl_title.Text = "Akin Winkel";
             // 
+            // cartScreen
+            // 
+            this.cartScreen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(65)))));
+            this.cartScreen.Location = new System.Drawing.Point(201, 76);
+            this.cartScreen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cartScreen.Name = "cartScreen";
+            this.cartScreen.Size = new System.Drawing.Size(674, 499);
+            this.cartScreen.TabIndex = 5;
+            this.cartScreen.Visible = false;
+            // 
             // storeScreen
             // 
             this.storeScreen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
@@ -269,7 +279,7 @@
             this.homeScreen.Location = new System.Drawing.Point(200, 76);
             this.homeScreen.Margin = new System.Windows.Forms.Padding(2);
             this.homeScreen.Name = "homeScreen";
-            this.homeScreen.Size = new System.Drawing.Size(600, 461);
+            this.homeScreen.Size = new System.Drawing.Size(675, 499);
             this.homeScreen.TabIndex = 3;
             this.homeScreen.Visible = false;
             this.homeScreen.Load += new System.EventHandler(this.homeScreen1_Load);
@@ -284,16 +294,6 @@
             this.profileScreen.TabIndex = 2;
             this.profileScreen.Visible = false;
             // 
-            // cartScreen
-            // 
-            this.cartScreen.BackColor = System.Drawing.SystemColors.Control;
-            this.cartScreen.Location = new System.Drawing.Point(201, 76);
-            this.cartScreen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cartScreen.Name = "cartScreen";
-            this.cartScreen.Size = new System.Drawing.Size(600, 411);
-            this.cartScreen.TabIndex = 5;
-            this.cartScreen.Visible = false;
-            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -302,10 +302,10 @@
             this.ClientSize = new System.Drawing.Size(875, 575);
             this.Controls.Add(this.panel_header);
             this.Controls.Add(this.panel_menu);
+            this.Controls.Add(this.cartScreen);
             this.Controls.Add(this.storeScreen);
             this.Controls.Add(this.homeScreen);
             this.Controls.Add(this.profileScreen);
-            this.Controls.Add(this.cartScreen);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmPrincipal";
             this.ShowIcon = false;

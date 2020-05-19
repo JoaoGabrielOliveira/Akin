@@ -220,6 +220,7 @@
     <Content Include="Produtos\Img\132134941646.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\brinco.jpg" />
     <Resource Include="Resources\cart-remove.png" />
   </ItemGroup>
   <ItemGroup>
