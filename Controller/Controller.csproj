@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CartControlller.cs" />
     <Compile Include="LoginController.cs" />
     <Compile Include="StoreController.cs" />
     <Compile Include="Program.cs" />

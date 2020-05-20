@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,7 +25,12 @@ namespace View.Screen.another
 
         private void btn_cart_Click_1(object sender, EventArgs e)
         {
+            AdicionarAoCarrinho(new Produto(), (int)txt_qand.Value);
+        }
 
+        private void AdicionarAoCarrinho(Produto produto, int unit)
+        {
+            Controller.CartControlller.CartProducts.Add(produto, unit);
         }
     }
 }

@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.txt_qand = new System.Windows.Forms.NumericUpDown();
             this.lbl_title = new System.Windows.Forms.Label();
             this.btn_cart = new System.Windows.Forms.Button();
             this.btn_cancel = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_qand)).BeginInit();
             this.SuspendLayout();
             // 
-            // numericUpDown1
+            // txt_qand
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft YaHei Light", 12F);
-            this.numericUpDown1.Location = new System.Drawing.Point(42, 79);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(145, 29);
-            this.numericUpDown1.TabIndex = 27;
+            this.txt_qand.Font = new System.Drawing.Font("Microsoft YaHei Light", 12F);
+            this.txt_qand.Location = new System.Drawing.Point(42, 79);
+            this.txt_qand.Name = "txt_qand";
+            this.txt_qand.Size = new System.Drawing.Size(145, 29);
+            this.txt_qand.TabIndex = 27;
             // 
             // lbl_title
             // 
@@ -98,7 +98,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(447, 192);
             this.Controls.Add(this.btn_cart);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.txt_qand);
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.lbl_title);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -107,7 +107,7 @@
             this.Name = "AddCart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddCart";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_qand)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -116,7 +116,7 @@
         #endregion
 
         private System.Windows.Forms.Button btn_cart;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown txt_qand;
         private System.Windows.Forms.Button btn_cancel;
         private System.Windows.Forms.Label lbl_title;
     }

@@ -8,9 +8,5 @@ namespace Controller
     {
         public static List<Produto> ListProducts = Model.Produto.All();
 
-        public static void Popular()
-        {
-
-        }
     }
 }

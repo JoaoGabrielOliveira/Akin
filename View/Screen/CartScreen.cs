@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Model;
 
 namespace View.Screen
 {
@@ -19,10 +20,13 @@ namespace View.Screen
 
         private void CartScreen_Load(object sender, EventArgs e)
         {
-            CreateBox("Anel");
-            CreateBox("Bolsa", 10.99);
-            CreateBox("Turbante", 9.99, 1) ;
-            CreateBox("Bracelhete", 9.99, 1, 9);
+            foreach (KeyValuePair<Produto, int> key in Controller.CartControlller.CartProducts)
+            {
+                var produto = key.Key;
+                var unidade = key.Value;
+
+                CreateBox(produto.Name, produto.Price, unidade, produto.ID);
+            }
         }
 
         private void CreateBox(string n = "Desconhecido", double p = 00.00f, int u = 0, int id = 0)
