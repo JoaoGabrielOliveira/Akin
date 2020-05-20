@@ -127,6 +127,7 @@
             this.panel_block.Name = "panel_block";
             this.panel_block.Size = new System.Drawing.Size(643, 117);
             this.panel_block.TabIndex = 31;
+            this.panel_block.Visible = false;
             // 
             // panel_prod
             // 

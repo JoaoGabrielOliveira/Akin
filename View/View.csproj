@@ -87,12 +87,6 @@
     <Compile Include="Screen\another\AddCart.Designer.cs">
       <DependentUpon>AddCart.cs</DependentUpon>
     </Compile>
-    <Compile Include="Screen\another\PopUp.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Screen\another\PopUp.Designer.cs">
-      <DependentUpon>PopUp.cs</DependentUpon>
-    </Compile>
     <Compile Include="Screen\CartScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -138,9 +132,6 @@
     </Compile>
     <EmbeddedResource Include="Screen\another\AddCart.resx">
       <DependentUpon>AddCart.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Screen\another\PopUp.resx">
-      <DependentUpon>PopUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screen\CartScreen.resx">
       <DependentUpon>CartScreen.cs</DependentUpon>
