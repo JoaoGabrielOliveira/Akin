@@ -19,6 +19,15 @@ namespace Model
             this.Stock = 0;
         }
 
+        public Produto(Produto p)
+        {
+            this.ID = p.ID;
+            this.Name = p.Name;
+            this.Price = p.Price;
+            this.Stock = p.Stock;
+            this.Created = p.Created;
+        }
+
         public Produto(int id, string name, double price, int stock, DateTime created)
         {
             this.ID = id;
@@ -251,6 +260,76 @@ namespace Model
             finally
             {
                 BancoDeDados.Conexao.Close();
+            }
+        }
+
+        public static int GetStock(int id)
+        {
+            int stock = -1;
+
+            string SQL = "SELECT products.stock FROM products WHERE ID = @ID;";
+            SqlCommand Comando = new SqlCommand(SQL, BancoDeDados.Conexao);
+            Comando.Parameters.AddWithValue("@ID", id);
+
+            try
+            {
+                BancoDeDados.Conexao.Open();
+
+                Comando.CommandType = System.Data.CommandType.Text;
+                SqlDataReader render = Comando.ExecuteReader();
+
+
+
+                while (render.Read())
+                {
+                    stock = render.GetInt32(0);
+                }
+                BancoDeDados.Conexao.Close();
+                return stock;
+            }
+
+            catch (Exception)
+            {
+                BancoDeDados.Conexao.Close();
+                return stock;
+                //000 - Erro inesperado.
+            }
+
+            finally
+            {
+                BancoDeDados.Conexao.Close();
+            }
+        }
+
+        public static string SetStock(int id, int valor)
+        {
+            string SQL = "UPDATE products SET products.stock = @STOCK WHERE id = @ID;";
+            SqlCommand Comando = new SqlCommand(SQL, BancoDeDados.Conexao);
+
+            Comando.Parameters.AddWithValue("@STOCK", valor);
+            Comando.Parameters.AddWithValue("@ID", id);
+
+            try
+            {
+                int info = Comando.ExecuteNonQuery();
+                if (info > 0)
+                {
+                    return "300";
+                    //Produto Atualizado.
+                }
+
+                else
+                {
+                    return "310";
+                    //Produto não Atualizado
+                }
+            }
+
+            catch (Exception)
+            {
+                BancoDeDados.Conexao.Close();
+                return "318";
+                //318 - Erro ao Atualizar
             }
         }
     }
