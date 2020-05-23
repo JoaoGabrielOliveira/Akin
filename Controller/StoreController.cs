@@ -8,5 +8,11 @@ namespace Controller
     {
         public static List<Produto> ListProducts = Model.Produto.All();
 
+        public static void AdicionarAoCarrinho(Produto produto, int quantidade)
+        {
+            Controller.CartControlller.CartProducts.Add(produto, quantidade);
+        }
+
+
     }
 }

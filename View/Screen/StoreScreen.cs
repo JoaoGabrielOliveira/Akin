@@ -5,7 +5,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using Controller;
 using View.Screen.another;
-using System.IO;
+using Model;
 
 namespace View.Screen
 {
@@ -20,8 +20,12 @@ namespace View.Screen
         private void StoreScreen_Load(object sender, EventArgs e)
         {           
             foreach (var product in  StoreController.ListProducts)
-            {                
-                CreateBox(product.Name, product.Price, product.ID);
+            {
+                if (Produto.Find(product.ID).ID > 0)
+                {
+                    CreateBox(product.Name, product.Price, product.ID);
+                }
+                
             }
         }
 
@@ -66,7 +70,7 @@ namespace View.Screen
             btn.Image = global::View.Properties.Resources.Cart;
             btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btn.Location = new System.Drawing.Point(0, 200);
-            btn.Name = "btn_cart";
+            btn.Name = "id_" + id;
             btn.Click += Btn_Click;
             btn.Size = new System.Drawing.Size(142, 37);
             btn.TabIndex = 7;
@@ -89,7 +93,7 @@ namespace View.Screen
             block.BackColor = System.Drawing.Color.Snow;
             block.Location = new System.Drawing.Point(10, 10);
             block.Margin = new System.Windows.Forms.Padding(10);
-            block.Name = "id_" + id;
+            block.Name = "block_" + id;
             block.Size = new System.Drawing.Size(142, 255);
             block.TabIndex = 27;
 
@@ -105,7 +109,10 @@ namespace View.Screen
 
         private void Btn_Click(object sender, EventArgs e)
         {
-            AddCart cart = new AddCart();
+            Button btn = (Button)sender;
+            int id = int.Parse(btn.Name.Split('_')[1]);
+
+            AddCart cart = new AddCart( Produto.Find(id) );
             cart.Show();
         }
     }

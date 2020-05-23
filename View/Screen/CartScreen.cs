@@ -158,6 +158,8 @@ namespace View.Screen
             Button btn = (Button)sender;
             string id = (btn.Name.Split('_'))[1];
             MessageBox.Show(id);
+
+            //flowCartProducts.Controls.Remove()
             
         }
     }
