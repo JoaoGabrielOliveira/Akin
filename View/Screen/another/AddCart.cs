@@ -28,9 +28,20 @@ namespace View.Screen.another
 
         private void btn_cart_Click_1(object sender, EventArgs e)
         {
-            if (Produto.Find(Product.ID).Stock < (int)txt_qand.Value)
+            if (Product.Stock > (int)txt_qand.Value)
             {
                 Controller.StoreController.AdicionarAoCarrinho(Product, (int)txt_qand.Value);
+                
+                MessageBox.Show("Adicionando ao Carrinho com sucesso.",
+    "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                this.Dispose();
+            }
+
+            else
+            {
+                MessageBox.Show("Não há quantidade em estoque pra quantidade solicitada.\nHá " + Product.Stock + " no estoque",
+                    "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
