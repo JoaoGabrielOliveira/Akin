@@ -6,3 +6,10 @@
 /Controller/bin/*
 
 .vs/*
+.vs/Akin/v16/.suo
+Controller/obj/Debug/Controller.csproj.CoreCompileInputs.cache
+Controller/obj/Debug/Controller.csprojAssemblyReference.cache
+Controller/obj/Debug/Controller.exe
+Controller/obj/Debug/Controller.pdb
+View/obj/Debug/DesignTimeResolveAssemblyReferences.cache
+View/obj/Debug/View.csproj.FileListAbsolute.txt
