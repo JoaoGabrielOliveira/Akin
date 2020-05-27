@@ -282,7 +282,6 @@
             this.homeScreen.Size = new System.Drawing.Size(675, 499);
             this.homeScreen.TabIndex = 3;
             this.homeScreen.Visible = false;
-            this.homeScreen.Load += new System.EventHandler(this.homeScreen1_Load);
             // 
             // profileScreen
             // 

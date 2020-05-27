@@ -189,7 +189,6 @@
             this.panel_buy.Controls.Add(this.lbl_price_buy);
             this.panel_buy.Controls.Add(this.lbl_info_compra);
             this.panel_buy.Controls.Add(this.lbl_unit_buy);
-            this.panel_buy.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel_buy.Location = new System.Drawing.Point(326, 0);
             this.panel_buy.Name = "panel_buy";
             this.panel_buy.Size = new System.Drawing.Size(317, 117);
@@ -253,7 +252,7 @@
             this.Controls.Add(this.panel_footer);
             this.Name = "CartScreen";
             this.Size = new System.Drawing.Size(675, 499);
-            this.Load += new System.EventHandler(this.CartScreen_Load);
+            this.VisibleChanged += new System.EventHandler(this.CartScreen_VisibleChanged);
             this.panel_footer.ResumeLayout(false);
             this.panel_footer.PerformLayout();
             this.flowCartProducts.ResumeLayout(false);

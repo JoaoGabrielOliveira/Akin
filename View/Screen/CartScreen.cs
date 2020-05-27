@@ -1,13 +1,13 @@
-﻿using System;
+﻿using Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Model;
 
 namespace View.Screen
 {
@@ -16,17 +16,6 @@ namespace View.Screen
         public CartScreen()
         {
             InitializeComponent();
-        }
-
-        private void CartScreen_Load(object sender, EventArgs e)
-        {
-            foreach (KeyValuePair<Produto, int> key in Controller.CartControlller.CartProducts)
-            {
-                var produto = key.Key;
-                var unidade = key.Value;
-
-                CreateBox(produto.Name, produto.Price, unidade, produto.ID);
-            }
         }
 
         private void CreateBox(string n = "Desconhecido", double p = 00.00f, int u = 0, int id = 0)
@@ -157,10 +146,50 @@ namespace View.Screen
         {
             Button btn = (Button)sender;
             string id = (btn.Name.Split('_'))[1];
-            MessageBox.Show(id);
 
-            //flowCartProducts.Controls.Remove()
-            
+            MessageBox.Show(id);            
+        }
+
+        private void CartScreen_VisibleChanged(object sender, EventArgs e)
+        {
+            ClearCart();
+
+            LoadProductCart();
+
+            LoadTotalPrice();
+        }
+
+        private void LoadProductCart()
+        {
+            foreach (KeyValuePair<Produto, int> key in Controller.CartControlller.CartProducts)
+            {
+                var produto = key.Key;
+                var unidade = key.Value;
+
+                CreateBox(produto.Name, produto.Price, unidade, produto.ID);
+            }
+        }
+
+        private void ClearCart()
+        {
+            for (int i = 0; i < flowCartProducts.Controls.Count; i++)
+            {
+                flowCartProducts.Controls.RemoveAt(i);
+            }
+        }
+
+        private void LoadTotalPrice()
+        {
+            double Total = 0;
+            foreach (KeyValuePair<Produto, int> key in Controller.CartControlller.CartProducts)
+            {
+                var produto = key.Key;
+                var unidade = key.Value;
+
+                Total += produto.Price * unidade;
+            }
+
+            lbl_total_price.Text = Total.ToString("c");
         }
     }
 }

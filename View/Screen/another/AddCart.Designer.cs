@@ -107,6 +107,7 @@
             this.Name = "AddCart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddCart";
+            this.Deactivate += new System.EventHandler(this.AddCart_Deactivate);
             ((System.ComponentModel.ISupportInitialize)(this.txt_qand)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

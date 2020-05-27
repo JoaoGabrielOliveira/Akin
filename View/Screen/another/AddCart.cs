@@ -45,6 +45,9 @@ namespace View.Screen.another
             }
         }
 
-
+        private void AddCart_Deactivate(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }

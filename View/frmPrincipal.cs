@@ -22,10 +22,6 @@ namespace View
         public static int screenIndex = 1;
         public static int cartItens = 0;
 
-        private void homeScreen1_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void btn_profile_Click(object sender, EventArgs e)
         {
