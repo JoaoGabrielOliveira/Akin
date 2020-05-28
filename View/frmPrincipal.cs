@@ -129,5 +129,15 @@ namespace View
             lbl_not_number.Visible = true;
 
         }
+
+        private void cartScreen_VisibleChanged(object sender, EventArgs e)
+        {
+            if(cartScreen.Visible) cartScreen.ReloadForm();
+        }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+            btn_profile.Text = Controller.LoginController.user.Name;
+        }
     }
 }

@@ -169,7 +169,7 @@
             this.btn_home.ForeColor = System.Drawing.Color.White;
             this.btn_home.Image = global::View.Properties.Resources.shop;
             this.btn_home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_home.Location = new System.Drawing.Point(26, 124);
+            this.btn_home.Location = new System.Drawing.Point(27, 124);
             this.btn_home.Name = "btn_home";
             this.btn_home.Size = new System.Drawing.Size(173, 50);
             this.btn_home.TabIndex = 2;
@@ -264,6 +264,7 @@
             this.cartScreen.Size = new System.Drawing.Size(674, 499);
             this.cartScreen.TabIndex = 5;
             this.cartScreen.Visible = false;
+            this.cartScreen.VisibleChanged += new System.EventHandler(this.cartScreen_VisibleChanged);
             // 
             // storeScreen
             // 
@@ -289,7 +290,7 @@
             this.profileScreen.Location = new System.Drawing.Point(200, 76);
             this.profileScreen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.profileScreen.Name = "profileScreen";
-            this.profileScreen.Size = new System.Drawing.Size(600, 411);
+            this.profileScreen.Size = new System.Drawing.Size(675, 499);
             this.profileScreen.TabIndex = 2;
             this.profileScreen.Visible = false;
             // 
@@ -307,10 +308,9 @@
             this.Controls.Add(this.profileScreen);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmPrincipal";
-            this.ShowIcon = false;
-            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela Principal";
+            this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.panel_menu.ResumeLayout(false);
             this.panel_menu.PerformLayout();
             this.panel_ext_btn.ResumeLayout(false);

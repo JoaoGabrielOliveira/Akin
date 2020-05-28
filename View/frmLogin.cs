@@ -129,14 +129,16 @@ namespace View
             if (condicao == "100")
             {
                 MessageBox.Show("Bem-Vindo ao Akin Winkel!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                new frmPrincipal().Show();
+                frmPrincipal Formulario = new frmPrincipal();
+                Formulario.Show();
                 this.Hide();
             }
 
             else if (condicao == "101" || condicao == "111")
             {
                 MessageBox.Show("Bem-Vindo " + txt_email.Text, "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                new frmPrincipal().Show();
+                frmPrincipal Formulario = new frmPrincipal();
+                Formulario.Show();
                 this.Hide();
             }
 

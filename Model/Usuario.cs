@@ -13,10 +13,16 @@ namespace Model
             get;
         }
 
-
+        /// <summary>
+        /// Nome do Usuario
+        /// </summary>
         public string Name { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
+        /// <summary>
+        /// Qual o tipo do Usuario
+        /// P = Padrão | A = Administrador
+        /// </summary>
         public char TypeUser { get; set; }
         public DateTime Created;
 

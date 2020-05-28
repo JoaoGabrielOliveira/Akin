@@ -40,6 +40,7 @@ namespace View.Screen
             block.Location = new System.Drawing.Point(7, 7);
             block.Margin = new System.Windows.Forms.Padding(7);
             block.Size = new System.Drawing.Size(643, 117);
+            block.Name = "blockid_" + id.ToString();
             block.TabIndex = 31;
 
             //Imagem
@@ -150,7 +151,7 @@ namespace View.Screen
             MessageBox.Show(id);            
         }
 
-        private void CartScreen_VisibleChanged(object sender, EventArgs e)
+        public void ReloadForm()
         {
             ClearCart();
 
@@ -166,6 +167,7 @@ namespace View.Screen
                 var produto = key.Key;
                 var unidade = key.Value;
 
+                MessageBox.Show(produto.Name);
                 CreateBox(produto.Name, produto.Price, unidade, produto.ID);
             }
         }
@@ -174,7 +176,9 @@ namespace View.Screen
         {
             for (int i = 0; i < flowCartProducts.Controls.Count; i++)
             {
+                ///MessageBox.Show(flowCartProducts.Controls[i].Name);
                 flowCartProducts.Controls.RemoveAt(i);
+                
             }
         }
 
