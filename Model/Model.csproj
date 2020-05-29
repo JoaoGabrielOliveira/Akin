@@ -44,7 +44,7 @@
   <ItemGroup>
     <Compile Include="BancoDeDados.cs" />
     <Compile Include="Produto.cs" />
-    <None Include="seed.cs" />
+    <Compile Include="Purchase.cs" />
     <Compile Include="Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
