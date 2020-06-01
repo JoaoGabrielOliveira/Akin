@@ -23,3 +23,4 @@ E:\Projetos Programação\Akin\View\obj\Debug\View.exe
 E:\Projetos Programação\Akin\View\obj\Debug\View.pdb
 E:\Projetos Programação\Akin\View\obj\Debug\View.Screen.another.AddCart.resources
 E:\Projetos Programação\Akin\View\obj\Debug\View.g.resources
+E:\Projetos Programação\Akin\View\obj\Debug\View.frmPagamento.resources

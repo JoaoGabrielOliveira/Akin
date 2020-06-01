@@ -17,6 +17,7 @@ namespace View
         {
             InitializeComponent();
             AbrirTela();
+            btn_profile.Name = Controller.LoginController.user.Name;
         }
 
         public static int screenIndex = 1;
